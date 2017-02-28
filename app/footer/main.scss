@@ -1,0 +1,39 @@
+#footer {
+    padding-top: 35px;
+
+    h1 {
+        font-size: 14px;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: #b7c2c9;
+        margin: 0 0 35px 0;
+        letter-spacing: 1px;
+        line-height: 16px;
+    }
+
+    .last-words, .contact {
+        padding-top: 25px;
+    }
+
+    .contact {
+        font-size: 24px;
+        font-weight: 100;
+
+        .link-buttons {
+            .btn {
+                transition: all .4s;
+                border-style: dashed;
+            }
+        }
+    }
+
+    .last-line {
+        padding: {
+            top: 25px;
+            bottom: 50px;
+        }
+        color: #999;
+        font-weight: 100;
+    }
+}
+

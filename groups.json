@@ -1,0 +1,89 @@
+{
+    "groups": [
+        {
+            "name": "PHP-TR",
+            "link": "https://www.facebook.com/groups/tr.developers/",
+            "languages": ["php"],
+            "memberCount": 12700,
+            "description": "'PHP-TR' PHP yazılımcıları topluluğudur."
+        },
+        {
+            "name": "Python Türkiye",
+            "link": "https://www.facebook.com/groups/PythonTurkiye/",
+            "languages": ["python"],
+            "memberCount": 10000,
+            "description": "Python hakkında ilgili insaların toplandığı bir grup."
+        },
+        {
+            "name": "Özgür Yazılım Haberleri",
+            "link": "https://www.facebook.com/ozguryazilimhaberleri",
+            "languages": ["linux","opensource"],
+            "memberCount": 2000,
+            "description": "Özgür Yazılım Dünyasındaki gelişmeleri takip edebileceğiniz bir facebook sayfasıdır. Open source dünyasının yeniliklerini birlikte paylaşalım."
+        },
+        {
+            "name": "FRONTEND-TR",
+            "link": "https://www.facebook.com/groups/frontend.tr/",
+            "languages": ["html", "css", "js"],
+            "memberCount": 5400,
+            "description": "FRONTEND-TR grubu, Frontend ile ilgili konularda paylaşımda bulunma ve hızlı çözüm üretmek için kurulmuştur. PHP-TR'nin kardeş grubudur."
+        },
+        {
+            "name": "Java-TR.org",
+            "link": "https://www.facebook.com/groups/javatr/",
+            "languages": ["java"],
+            "memberCount": 1700,
+            "description": "Bir dil düşünün ki ; Dünya üzerinde 9 milyondan fazla geliştiricisi olan, 3 milyardan fazla mobil uygulama için tercih edilmiş, 5 milyardan fazla Akıllı kartın aklı olan, Yazılım sektöründe en çok tercih edilen bir dili düşünün. Sizide bu dilin geliştircisi olmak ve bizimle bu gücü ve bilgiyi paylaşmak için Java-TR.org grubumuza davet ediyoruz."
+        },
+        {
+            "name": "Python-TR.org",
+            "link": "https://www.facebook.com/groups/pythontr.org/",
+            "languages": ["python"],
+            "memberCount": 400,
+            "description": "Python hakkındaki türkçe kaynak eksikliğini gidermek ve python tecrübelerimizi paylaşmak amaçlı grubumuza hoşgeldiniz."
+        },
+        {
+            "name": "Swift Türkiye",
+            "link": "https://www.facebook.com/groups/swift.tr/",
+            "languages": ["swift", "ios"],
+            "memberCount": 640,
+            "description": "Swift Türkiye grubu, ülkemizdeki Swift kullanan IOS geliştiricileri için oluşturulmuştur."
+        },
+        {
+            "name": "ZN Framework",
+            "link": "https://www.facebook.com/groups/znframework/",
+            "languages": ["php"],
+            "memberCount": 353,
+            "description": "ZN Framework, PHP Tabanlı Geliştirilmiş Profesyonel Bazdaki İlk Yerli Kod Çatısıdır."
+        },
+        {
+            "name": "Yazılımcılar Derneği",
+            "link": "https://www.facebook.com/groups/yazilimcilardernegi/",
+            "languages": ["php","asp","c#","c++",".net"],
+            "memberCount": 1593,
+            "description": "Ücretsiz yazılımcılar arası paylaşım soru-cevap tarzında açık bir gruptur."
+        },
+        {
+            "name": "Swift-TR",
+            "link": "https://www.facebook.com/groups/swturkiye/",
+            "languages": ["swift", "ios"],
+            "memberCount": 250,
+            "description": "Swift-TR grubu, Türkçe konuşan Swift kullanıcıları için oluşturulmuş ilk kurulan ve en geniş Facebook topluluğudur."
+        },
+        {
+            "name": "açıkkaynak",
+            "link": "https://github.com/acikkaynak/acikkaynak",
+            "languages": [],
+            "memberCount": 11,
+            "description": "GitHub'ın kendi doğal araçları kullanılarak Türkçe konuşan kullanıcıların açık kaynaklı projelere katkı sağlamasına yardımcı olmak amacıyla oluşturulmuştur."
+        },
+        {
+            "name": "Golang Türkiye",
+            "link": "https://www.facebook.com/groups/GolangTurkiye/",
+            "languages": ["go"],
+            "memberCount": 176,
+            "description": "Google'ın geliştirdiği Go Programlama Dili Golang Türkiye Topluluğudur"
+        }
+    ]
+}
+
