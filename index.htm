@@ -1,0 +1,336 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0019)http://topluluk.io/ -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" ng-app="app" class="ng-scope"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>
+    
+    <title>topluluk.io</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <link href="./topluluk.io_files/css" rel="stylesheet" type="text/css">
+
+    <script async="" src="./topluluk.io_files/analytics.js"></script><script src="./topluluk.io_files/vendors.js"></script>
+    <script src="./topluluk.io_files/bundle.js"></script>
+
+    <link rel="stylesheet" href="./topluluk.io_files/bundle.css">
+
+    <!-- Google Anayltics -->
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-68568075-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+</head>
+<body>
+    
+    <!-- ngInclude: './app/navbar/navbar.html' --><div id="navbar" ng-include="&#39;./app/navbar/navbar.html&#39;" class="ng-scope"><nav class="navbar navbar-light navbar-fixed-top ng-scope">
+    <div class="container">
+        <a class="navbar-brand" href="http://topluluk.io/#">topluluk.io</a>
+
+        <ul class="nav navbar-nav pull-right">
+            <li class="nav-item">
+                <a class="nav-link" href="http://topluluk.io/#information" target="_self">dogukan</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="http://topluluk.io/#groups" target="_self">gruplar</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+</div>
+    
+    <!-- ngInclude: './app/header/header.html' --><div id="header" ng-include="&#39;./app/header/header.html&#39;" class="ng-scope"><div class="container ng-scope">
+    <div class="row content">
+        <div class="col-xs-12 text">
+            merhaba. <span>`followersmanager`a hoş geldin.</span>
+        </div>
+    </div>
+</div>
+
+</div>    
+
+    <!-- ngInclude: './app/information/information.html' --><div id="information" ng-include="&#39;./app/information/information.html&#39;" class="ng-scope"><div class="container ng-scope">
+    <div class="row">
+        <div class="col-xs-12">
+            <h1 class="header">Türkiye'nin en geniş yazılımcı topluluğu.</h1>
+        </div>
+
+        <div class="col-xs-12 text">
+            <div class="row">
+                <div class="col-sm-6 text">
+                    Yazılımcıların bir araya gelip bilgi birikimlerini aktarmalarını sağlayan bir oluşumdur <strong>topluluk.</strong> Dil ayrımcılığı olmaksızın, herkese kapımız açıktır. İnsanların ufkunu açmak ve problemlerine doğru çözümleri üreten içerikler oluşturmak önceliğimiz.
+                </div>
+                <div class="col-sm-6 text">
+                    Bu bağlamda, insanları bir amaç doğrultusunda toplamayı başarmış grupları birbirleri ile kardeş grup ilan ederek daha çok insana ulaşmak istiyoruz. Her türlü gruba ve gönüllüye <strong>kapımız sonuna kadar açıktır.</strong> İnanıyoruz ki insalara fayda sağlayacak ve güzel ilişkişkiler kurulacak bir topluluk oluşacaktır. Unutma ki <strong>sen varsan</strong> topluluk oluruz!
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+
+    <!-- ngInclude: './app/groups/groups.html' --><div id="groups" ng-include="&#39;./app/groups/groups.html&#39;" class="ng-scope"><div class="container ng-scope" ng-controller="groups.controller as groupsCtrl">
+    <div class="row">
+        <div class="col-xs-12">
+            <h1 class="header">Kardeş Gruplar</h1>
+        </div>
+
+        <div class="col-xs-12">
+            <div class="card-columns">
+                <!-- ngRepeat: group in groups | orderBy: '-memberCount' --><div class="card ng-scope" ng-repeat="group in groups | orderBy: &#39;-memberCount&#39; ">
+                    <div class="card-block">
+                        <div class="card-title ng-binding">PHP-TR</div>
+                        <p class="card-text ng-binding">'PHP-TR' PHP yazılımcıları topluluğudur.</p>
+                        <p class="card-text languages">
+                            <!-- ngRepeat: language in group.languages --><span ng-repeat="language in group.languages" class="label label-default language ng-binding ng-scope">
+                                php
+                            </span><!-- end ngRepeat: language in group.languages -->
+                        </p>
+                        <p class="card-text member-count">
+                            <small class="text-muted ng-binding">+12,700 kişi</small>
+                        </p>
+                        <a class="card-link" ng-href="https://www.facebook.com/groups/tr.developers/" target="_blank" href="https://www.facebook.com/groups/tr.developers/">
+                            Katıl
+                        </a>
+                    </div>
+                </div><!-- end ngRepeat: group in groups | orderBy: '-memberCount' --><div class="card ng-scope" ng-repeat="group in groups | orderBy: &#39;-memberCount&#39; ">
+                    <div class="card-block">
+                        <div class="card-title ng-binding">Python Türkiye</div>
+                        <p class="card-text ng-binding">Python hakkında ilgili insaların toplandığı bir grup.</p>
+                        <p class="card-text languages">
+                            <!-- ngRepeat: language in group.languages --><span ng-repeat="language in group.languages" class="label label-default language ng-binding ng-scope">
+                                python
+                            </span><!-- end ngRepeat: language in group.languages -->
+                        </p>
+                        <p class="card-text member-count">
+                            <small class="text-muted ng-binding">+10,000 kişi</small>
+                        </p>
+                        <a class="card-link" ng-href="https://www.facebook.com/groups/PythonTurkiye/" target="_blank" href="https://www.facebook.com/groups/PythonTurkiye/">
+                            Katıl
+                        </a>
+                    </div>
+                </div><!-- end ngRepeat: group in groups | orderBy: '-memberCount' --><div class="card ng-scope" ng-repeat="group in groups | orderBy: &#39;-memberCount&#39; ">
+                    <div class="card-block">
+                        <div class="card-title ng-binding">FRONTEND-TR</div>
+                        <p class="card-text ng-binding">FRONTEND-TR grubu, Frontend ile ilgili konularda paylaşımda bulunma ve hızlı çözüm üretmek için kurulmuştur. PHP-TR'nin kardeş grubudur.</p>
+                        <p class="card-text languages">
+                            <!-- ngRepeat: language in group.languages --><span ng-repeat="language in group.languages" class="label label-default language ng-binding ng-scope">
+                                html
+                            </span><!-- end ngRepeat: language in group.languages --><span ng-repeat="language in group.languages" class="label label-default language ng-binding ng-scope">
+                                css
+                            </span><!-- end ngRepeat: language in group.languages --><span ng-repeat="language in group.languages" class="label label-default language ng-binding ng-scope">
+                                js
+                            </span><!-- end ngRepeat: language in group.languages -->
+                        </p>
+                        <p class="card-text member-count">
+                            <small class="text-muted ng-binding">+5,400 kişi</small>
+                        </p>
+                        <a class="card-link" ng-href="https://www.facebook.com/groups/frontend.tr/" target="_blank" href="https://www.facebook.com/groups/frontend.tr/">
+                            Katıl
+                        </a>
+                    </div>
+                </div><!-- end ngRepeat: group in groups | orderBy: '-memberCount' --><div class="card ng-scope" ng-repeat="group in groups | orderBy: &#39;-memberCount&#39; ">
+                    <div class="card-block">
+                        <div class="card-title ng-binding">Özgür Yazılım Haberleri</div>
+                        <p class="card-text ng-binding">Özgür Yazılım Dünyasındaki gelişmeleri takip edebileceğiniz bir facebook sayfasıdır. Open source dünyasının yeniliklerini birlikte paylaşalım.</p>
+                        <p class="card-text languages">
+                            <!-- ngRepeat: language in group.languages --><span ng-repeat="language in group.languages" class="label label-default language ng-binding ng-scope">
+                                linux
+                            </span><!-- end ngRepeat: language in group.languages --><span ng-repeat="language in group.languages" class="label label-default language ng-binding ng-scope">
+                                opensource
+                            </span><!-- end ngRepeat: language in group.languages -->
+                        </p>
+                        <p class="card-text member-count">
+                            <small class="text-muted ng-binding">+2,000 kişi</small>
+                        </p>
+                        <a class="card-link" ng-href="https://www.facebook.com/ozguryazilimhaberleri" target="_blank" href="https://www.facebook.com/ozguryazilimhaberleri">
+                            Katıl
+                        </a>
+                    </div>
+                </div><!-- end ngRepeat: group in groups | orderBy: '-memberCount' --><div class="card ng-scope" ng-repeat="group in groups | orderBy: &#39;-memberCount&#39; ">
+                    <div class="card-block">
+                        <div class="card-title ng-binding">Java-TR.org</div>
+                        <p class="card-text ng-binding">Bir dil düşünün ki ; Dünya üzerinde 9 milyondan fazla geliştiricisi olan, 3 milyardan fazla mobil uygulama için tercih edilmiş, 5 milyardan fazla Akıllı kartın aklı olan, Yazılım sektöründe en çok tercih edilen bir dili düşünün. Sizide bu dilin geliştircisi olmak ve bizimle bu gücü ve bilgiyi paylaşmak için Java-TR.org grubumuza davet ediyoruz.</p>
+                        <p class="card-text languages">
+                            <!-- ngRepeat: language in group.languages --><span ng-repeat="language in group.languages" class="label label-default language ng-binding ng-scope">
+                                java
+                            </span><!-- end ngRepeat: language in group.languages -->
+                        </p>
+                        <p class="card-text member-count">
+                            <small class="text-muted ng-binding">+1,700 kişi</small>
+                        </p>
+                        <a class="card-link" ng-href="https://www.facebook.com/groups/javatr/" target="_blank" href="https://www.facebook.com/groups/javatr/">
+                            Katıl
+                        </a>
+                    </div>
+                </div><!-- end ngRepeat: group in groups | orderBy: '-memberCount' --><div class="card ng-scope" ng-repeat="group in groups | orderBy: &#39;-memberCount&#39; ">
+                    <div class="card-block">
+                        <div class="card-title ng-binding">Yazılımcılar Derneği</div>
+                        <p class="card-text ng-binding">Ücretsiz yazılımcılar arası paylaşım soru-cevap tarzında açık bir gruptur.</p>
+                        <p class="card-text languages">
+                            <!-- ngRepeat: language in group.languages --><span ng-repeat="language in group.languages" class="label label-default language ng-binding ng-scope">
+                                php
+                            </span><!-- end ngRepeat: language in group.languages --><span ng-repeat="language in group.languages" class="label label-default language ng-binding ng-scope">
+                                asp
+                            </span><!-- end ngRepeat: language in group.languages --><span ng-repeat="language in group.languages" class="label label-default language ng-binding ng-scope">
+                                c#
+                            </span><!-- end ngRepeat: language in group.languages --><span ng-repeat="language in group.languages" class="label label-default language ng-binding ng-scope">
+                                c++
+                            </span><!-- end ngRepeat: language in group.languages --><span ng-repeat="language in group.languages" class="label label-default language ng-binding ng-scope">
+                                .net
+                            </span><!-- end ngRepeat: language in group.languages -->
+                        </p>
+                        <p class="card-text member-count">
+                            <small class="text-muted ng-binding">+1,593 kişi</small>
+                        </p>
+                        <a class="card-link" ng-href="https://www.facebook.com/groups/yazilimcilardernegi/" target="_blank" href="https://www.facebook.com/groups/yazilimcilardernegi/">
+                            Katıl
+                        </a>
+                    </div>
+                </div><!-- end ngRepeat: group in groups | orderBy: '-memberCount' --><div class="card ng-scope" ng-repeat="group in groups | orderBy: &#39;-memberCount&#39; ">
+                    <div class="card-block">
+                        <div class="card-title ng-binding">Swift Türkiye</div>
+                        <p class="card-text ng-binding">Swift Türkiye grubu, ülkemizdeki Swift kullanan IOS geliştiricileri için oluşturulmuştur.</p>
+                        <p class="card-text languages">
+                            <!-- ngRepeat: language in group.languages --><span ng-repeat="language in group.languages" class="label label-default language ng-binding ng-scope">
+                                swift
+                            </span><!-- end ngRepeat: language in group.languages --><span ng-repeat="language in group.languages" class="label label-default language ng-binding ng-scope">
+                                ios
+                            </span><!-- end ngRepeat: language in group.languages -->
+                        </p>
+                        <p class="card-text member-count">
+                            <small class="text-muted ng-binding">+640 kişi</small>
+                        </p>
+                        <a class="card-link" ng-href="https://www.facebook.com/groups/swift.tr/" target="_blank" href="https://www.facebook.com/groups/swift.tr/">
+                            Katıl
+                        </a>
+                    </div>
+                </div><!-- end ngRepeat: group in groups | orderBy: '-memberCount' --><div class="card ng-scope" ng-repeat="group in groups | orderBy: &#39;-memberCount&#39; ">
+                    <div class="card-block">
+                        <div class="card-title ng-binding">Python-TR.org</div>
+                        <p class="card-text ng-binding">Python hakkındaki türkçe kaynak eksikliğini gidermek ve python tecrübelerimizi paylaşmak amaçlı grubumuza hoşgeldiniz.</p>
+                        <p class="card-text languages">
+                            <!-- ngRepeat: language in group.languages --><span ng-repeat="language in group.languages" class="label label-default language ng-binding ng-scope">
+                                python
+                            </span><!-- end ngRepeat: language in group.languages -->
+                        </p>
+                        <p class="card-text member-count">
+                            <small class="text-muted ng-binding">+400 kişi</small>
+                        </p>
+                        <a class="card-link" ng-href="https://www.facebook.com/groups/pythontr.org/" target="_blank" href="https://www.facebook.com/groups/pythontr.org/">
+                            Katıl
+                        </a>
+                    </div>
+                </div><!-- end ngRepeat: group in groups | orderBy: '-memberCount' --><div class="card ng-scope" ng-repeat="group in groups | orderBy: &#39;-memberCount&#39; ">
+                    <div class="card-block">
+                        <div class="card-title ng-binding">ZN Framework</div>
+                        <p class="card-text ng-binding">ZN Framework, PHP Tabanlı Geliştirilmiş Profesyonel Bazdaki İlk Yerli Kod Çatısıdır.</p>
+                        <p class="card-text languages">
+                            <!-- ngRepeat: language in group.languages --><span ng-repeat="language in group.languages" class="label label-default language ng-binding ng-scope">
+                                php
+                            </span><!-- end ngRepeat: language in group.languages -->
+                        </p>
+                        <p class="card-text member-count">
+                            <small class="text-muted ng-binding">+353 kişi</small>
+                        </p>
+                        <a class="card-link" ng-href="https://www.facebook.com/groups/znframework/" target="_blank" href="https://www.facebook.com/groups/znframework/">
+                            Katıl
+                        </a>
+                    </div>
+                </div><!-- end ngRepeat: group in groups | orderBy: '-memberCount' --><div class="card ng-scope" ng-repeat="group in groups | orderBy: &#39;-memberCount&#39; ">
+                    <div class="card-block">
+                        <div class="card-title ng-binding">Swift-TR</div>
+                        <p class="card-text ng-binding">Swift-TR grubu, Türkçe konuşan Swift kullanıcıları için oluşturulmuş ilk kurulan ve en geniş Facebook topluluğudur.</p>
+                        <p class="card-text languages">
+                            <!-- ngRepeat: language in group.languages --><span ng-repeat="language in group.languages" class="label label-default language ng-binding ng-scope">
+                                swift
+                            </span><!-- end ngRepeat: language in group.languages --><span ng-repeat="language in group.languages" class="label label-default language ng-binding ng-scope">
+                                ios
+                            </span><!-- end ngRepeat: language in group.languages -->
+                        </p>
+                        <p class="card-text member-count">
+                            <small class="text-muted ng-binding">+250 kişi</small>
+                        </p>
+                        <a class="card-link" ng-href="https://www.facebook.com/groups/swturkiye/" target="_blank" href="https://www.facebook.com/groups/swturkiye/">
+                            Katıl
+                        </a>
+                    </div>
+                </div><!-- end ngRepeat: group in groups | orderBy: '-memberCount' --><div class="card ng-scope" ng-repeat="group in groups | orderBy: &#39;-memberCount&#39; ">
+                    <div class="card-block">
+                        <div class="card-title ng-binding">Golang Türkiye</div>
+                        <p class="card-text ng-binding">Google'ın geliştirdiği Go Programlama Dili Golang Türkiye Topluluğudur</p>
+                        <p class="card-text languages">
+                            <!-- ngRepeat: language in group.languages --><span ng-repeat="language in group.languages" class="label label-default language ng-binding ng-scope">
+                                go
+                            </span><!-- end ngRepeat: language in group.languages -->
+                        </p>
+                        <p class="card-text member-count">
+                            <small class="text-muted ng-binding">+176 kişi</small>
+                        </p>
+                        <a class="card-link" ng-href="https://www.facebook.com/groups/GolangTurkiye/" target="_blank" href="https://www.facebook.com/groups/GolangTurkiye/">
+                            Katıl
+                        </a>
+                    </div>
+                </div><!-- end ngRepeat: group in groups | orderBy: '-memberCount' --><div class="card ng-scope" ng-repeat="group in groups | orderBy: &#39;-memberCount&#39; ">
+                    <div class="card-block">
+                        <div class="card-title ng-binding">açıkkaynak</div>
+                        <p class="card-text ng-binding">GitHub'ın kendi doğal araçları kullanılarak Türkçe konuşan kullanıcıların açık kaynaklı projelere katkı sağlamasına yardımcı olmak amacıyla oluşturulmuştur.</p>
+                        <p class="card-text languages">
+                            <!-- ngRepeat: language in group.languages -->
+                        </p>
+                        <p class="card-text member-count">
+                            <small class="text-muted ng-binding">+11 kişi</small>
+                        </p>
+                        <a class="card-link" ng-href="https://github.com/acikkaynak/acikkaynak" target="_blank" href="https://github.com/acikkaynak/acikkaynak">
+                            Katıl
+                        </a>
+                    </div>
+                </div><!-- end ngRepeat: group in groups | orderBy: '-memberCount' -->
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+
+    <!-- ngInclude: './app/footer/footer.html' --><div id="footer" ng-include="&#39;./app/footer/footer.html&#39;" class="ng-scope"><div class="container ng-scope">
+    <div class="row">
+        <div class="col-md-6 col-xs-12 last-words">
+            <h1>SON OLARAK</h1>
+            <p>Yeni bir ekip ve yeni bir heyecan içerisindeyiz. Seni de aramızda görmeyi çok isteriz. Unutma ki biz sensiz yapamayız, <strong>topluluk demek hep beraber olmak demek!</strong>
+            </p>
+            <p>
+                <strong>Eğer bu toplulukta kesin olmalı dediğin bir grup varsa,</strong> bunu bizlerle paylaşmaktan çekinme, ilgili grubu da aramızda görmekten zevk duyarız.</p>
+        </div>
+        <div class="col-md-6 col-xs-12 contact">
+            <h1>ILETISIM</h1>
+            <p>Aklına bir fikir geldiğinde <strong>bizimle iletişime geçmen yeterli.</strong></p>
+            <p>
+                </p><div class="btn-group-lg link-buttons" role="group">
+                    <a class="btn btn-primary-outline" href="mailto:bilgi@topluluk.io" target="_blank">
+                        <span class="fa fa-envelope-o" aria-hidden="true"></span> Bize ulaşın
+                    </a>
+                    <a class="btn btn-primary-outline" href="http://eepurl.com/bBDiWL" target="_blank">
+                        <span class="fa fa-newspaper-o" aria-hidden="true"></span> Bültene Kayıt Olun
+                    </a>
+                </div>
+            <p></p>
+        </div>
+
+        <div class="col-xs-12 last-line">
+            <div class="pull-left">© Topluluk 2016</div>
+        </div>
+    </div>
+</div>
+
+</div>
+
+
+
+</body></html>
