@@ -1,433 +1,1086 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="author" content="KeyDesign" />
-    <meta name="description" content="AppSperia - App Landing Page" />
-    <meta name="keywords" content="AppSperia , Landing page, Template, App, Mobile, Android, iOS" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <!-- SITE TITLE -->
-    <title>AppSperia - App Landing Page</title>
+<meta charset="UTF-8">
+<meta name="description" content="Responsive Bootstrap App Landing Page Template">
+<meta name="keywords" content="Kane, Bootstrap, Landing page, Template, App, Mobile">
+<meta name="author" content="Mizanur Rahman">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    <!-- FAVICON -->
-    <link rel="icon" href="images/favicon.ico">
-    
-    <!-- WEB FONTS -->
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:100,300,400,600,700' rel='stylesheet' type='text/css'>
-   
-    <!-- STYLESHEETS -->
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <link rel="stylesheet" type="text/css" href="fonts/flaticon.css" />
-   <link rel="stylesheet" type="text/css" href="css/responsive.css" />
-    <!-- JQUERY -->
-    <script src="js/jquery.min.js"></script>
+<!-- SITE TITLE -->
+<title>Kane - Responsive App Landing Page</title>
+
+<!-- =========================
+      FAV AND TOUCH ICONS  
+============================== -->
+<link rel="icon" href="images/favicon.ico">
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+
+<!-- =========================
+     STYLESHEETS   
+============================== -->
+<!-- BOOTSTRAP -->
+<link rel="stylesheet" href="css/bootstrap.min.css">
+
+<!-- FONT ICONS -->
+<link rel="stylesheet" href="assets/elegant-icons/style.css">
+<link rel="stylesheet" href="assets/app-icons/styles.css">
+<!--[if lte IE 7]><script src="lte-ie7.js"></script><![endif]-->
+
+<!-- WEB FONTS -->
+<link href='http://fonts.googleapis.com/css?family=Roboto:100,300,100italic,400,300italic' rel='stylesheet' type='text/css'>
+
+<!-- CAROUSEL AND LIGHTBOX -->
+<link rel="stylesheet" href="css/owl.theme.css">
+<link rel="stylesheet" href="css/owl.carousel.css">
+<link rel="stylesheet" href="css/nivo-lightbox.css">
+<link rel="stylesheet" href="css/nivo_themes/default/default.css">
+
+<!-- ANIMATIONS -->
+<link rel="stylesheet" href="css/animate.min.css">
+
+<!-- CUSTOM STYLESHEETS -->
+<link rel="stylesheet" href="css/styles.css">
+
+<!-- COLORS -->
+<link rel="stylesheet" href="css/colors/blue.css"> <!-- DEFAULT COLOR/ CURRENTLY USING -->
+<!-- <link rel="stylesheet" href="css/colors/red.css"> --> 
+<!-- <link rel="stylesheet" href="css/colors/green.css"> --> 
+<!-- <link rel="stylesheet" href="css/colors/purple.css"> --> 
+<!-- <link rel="stylesheet" href="css/colors/orange.css"> --> 
+<!-- <link rel="stylesheet" href="css/colors/blue-munsell.css"> --> 
+<!-- <link rel="stylesheet" href="css/colors/slate.css"> --> 
+<!-- <link rel="stylesheet" href="css/colors/yellow.css"> -->
+
+<!-- RESPONSIVE FIXES -->
+<link rel="stylesheet" href="css/responsive.css">
+
+
+<!--[if lt IE 9]>
+			<script src="js/html5shiv.js"></script>
+			<script src="js/respond.min.js"></script>
+<![endif]-->
+
+<!-- JQUERY -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
 </head>
 
-<body> 
-    
-    <!-- PRELOADER -->
-    <div id="preloader"><img src="images/logo.png" alt=""></div>
-    
+<body>
+<!-- =========================
+     PRE LOADER       
+============================== -->
+<div class="preloader">
+  <div class="status">&nbsp;</div>
+</div>
 
-    <!-- MAIN NAV -->
-    <a id="main-nav" href="#sidr"><span class="flaticon-menu9"></span></a>
-    <div id="sidr" class="sidr">
-        
-        <!-- MAIN NAV LOGO -->
-        <a href="#" id="menu-logo"><img src="images/menu-logo.png" alt=""></a>
-        
-        <!-- MAIN NAV LINKS -->
-        <ul>
-            <li><a href="#Home" ><span class="icons flaticon-house3"></span>Home</a>
-            </li>
-            <li><a href="#Features" ><span class="icons flaticon-drawer1"></span>Features</a>
-            </li>
-            <li><a href="#About" ><span class="icons flaticon-cursor7"></span>About</a>
-            </li>
-            <li><a href="#Video" ><span class="icons flaticon-key9"></span>Video</a>
-            </li>
-            <li><a href="#Clients" ><span class="icons flaticon-comment2"></span>Clients</a>
-            </li>
-            <li><a href="#Screenshots" ><span class="icons flaticon-camera19"></span>Screenshots</a>
-            </li>
-            <li><a href="#Pricing" ><span class="icons flaticon-tag10"></span>Pricing</a>
-            </li>
-            <li><a href="#Download" ><span class="icons flaticon-download11"></span>Download</a>
-            </li>
-            <li><a href="#Contact" ><span class="icons flaticon-small72"></span>Contact</a>
-            </li>
-        </ul>
-        <!-- END MAIN NAV LINKS -->
-    </div>
-    <!-- END MAIN NAV -->
-    
-    <!-- PAGE LOGO -->
-    <div class="wrap">
-        <div id="logo">
-            <a href="#"><img src="images/logo.png" alt=""> </a>
-        </div>
-    </div>
-    <!-- END PAGE LOGO -->
+<!-- =========================
+     HEADER   
+============================== -->
+<header class="header" data-stellar-background-ratio="0.5" id="home">
 
-    <!-- LANDING PAGE CONTENT -->
-    <div id="fullpage">
-        
-        <!-- RIGHT HAND & PHONE MOCK-UP IMAGES -->
-        <div class="wrap">
-           <div class="section-image"> 
-            <!-- Home IMAGE --><img src="http://placehold.it/232x407" alt="Home">
-            <!-- Features IMAGE --><img src="http://placehold.it/232x407" alt="Features">
-            <!-- About IMAGE --><img src="http://placehold.it/232x407" alt="About">
-            <!-- Video IMAGE --><img src="http://placehold.it/232x407" alt="Video">
-            <!-- Clients IMAGE --><img src="http://placehold.it/232x407" alt="Clients">
-            <!-- Screenshots IMAGE --><img src="http://placehold.it/232x407" alt="Screenshots">
-            <!-- Pricing IMAGE --><img src="http://placehold.it/232x407" alt="Pricing">
-            <!-- Download IMAGE --><img src="http://placehold.it/232x407" alt="Download">
-            <!-- Contact IMAGE --><img src="http://placehold.it/232x407" alt="Contact">
-            </div>
-            <div id="hand"></div>
-        </div>
-        <!-- END RIGHT HAND & PHONE MOCK-UP -->
-        
+<!-- COLOR OVER IMAGE -->
+<div class="color-overlay"> <!-- To make header full screen. Use .full-screen class with color overlay. Example: <div class="color-overlay full-screen">  -->
 
-        <!-- SECTION HOME -->
-        <div class="section " id="section0">
-            <div class="wrap">
-                <div class="box">
-                    <!-- SECTION HOME CONTENT -->
-                    <h1>Create your app page with <strong>App</strong>speria</h1>
-                    <p>A better way to present your app using fully featured appsperia template.
-                    <br> Now available on the App Store and Play Store!</p> <a href="#Download" class="simple-button"><span class="icon flaticon-download7"></span>Download App</a> </div>
-                    <!-- END SECTION HOME CONTENT -->
-            </div>
-        </div>
-        <!-- END SECTION HOME -->
+	<!-- STICKY NAVIGATION -->
+	<div class="navbar navbar-inverse bs-docs-nav navbar-fixed-top sticky-navigation">
+		<div class="container">
+			<div class="navbar-header">
+				
+				<!-- LOGO ON STICKY NAV BAR -->
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#kane-navigation">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				</button>
 
-        <!-- SECTION FEATURES -->
-        <div class="section " id="section1">
-            <div class="wrap">
-                <div class="box">
-                    <!-- SECTION FEATURES CONTENT -->
-                    <h2><strong>Amazing</strong> Features</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora similique excepturi obcaecati, maiores nostrum esse illo in soluta at saepe perspiciatis eos quasi laudantium sunt ad quaerat?</p>
-                    <ul class="features">
-                        <li><a class="tooltip" href="#"><span class="icon flaticon-desktop1"></span> Clean Design<span class="tooltip-content"><span class="tooltip-text"><span class="tooltip-inner"><span class="icon flaticon-desktop1"></span>Lorem ipsum dolor sit amet, consectetur adipisicing elitr eiciendis autem aperiam.</span></span></span></a> </li>
-                        <li><a class="tooltip" href="#"><span class="icon flaticon-small62"></span> Dedicated Support<span class="tooltip-content"><span class="tooltip-text"><span class="tooltip-inner"><span class="icon flaticon-small62"></span>Lorem ipsum dolor sit amet, consectetur adipisicing elitr eiciendis autem aperiam.</span></span></span></a> </li>
-                        <li><a class="tooltip" href="#"><span class="icon flaticon-adjust3"></span> Very customizable<span class="tooltip-content"><span class="tooltip-text"><span class="tooltip-inner"><span class="icon flaticon-adjust3"></span>Lorem ipsum dolor sit amet, consectetur adipisicing elitr eiciendis autem aperiam.</span></span></span></a> </li>
-                    </ul>
-                    <ul class="features">
-                        <li><a class="tooltip" href="#"><span class="icon flaticon-interface19"></span> Well Documented<span class="tooltip-content"><span class="tooltip-text"><span class="tooltip-inner"><span class="icon flaticon-interface19"></span>Lorem ipsum dolor sit amet, consectetur adipisicing elitr eiciendis autem aperiam.</span></span></span></a> </li>
-                        <li><a class="tooltip" href="#"><span class="icon flaticon-outlined3"></span> Multiple Demos<span class="tooltip-content"><span class="tooltip-text"><span class="tooltip-inner"><span class="icon flaticon-outlined3"></span>Lorem ipsum dolor sit amet, consectetur adipisicing elitr eiciendis autem aperiam.</span></span></span></a> </li>
-                        <li><a class="tooltip" href="#"><span class="icon flaticon-lightbulb"></span> Amazing Features<span class="tooltip-content"><span class="tooltip-text"><span class="tooltip-inner"><span class="icon flaticon-lightbulb"></span>Lorem ipsum dolor sit amet, consectetur adipisicing elitr eiciendis autem aperiam.</span></span></span></a> </li>
-                    </ul>
-                    <!-- END SECTION FEATURES CONTENT -->
-                </div>
-            </div>
-        </div>
-        <!-- END SECTION FEATURES -->
+				<a class="navbar-brand" href="#"><img src="images/logo-black.png" alt=""></a>
+				
+			</div>
+			
+			<!-- NAVIGATION LINKS -->
+			<div class="navbar-collapse collapse" id="kane-navigation">
+				<ul class="nav navbar-nav navbar-right main-navigation">
+					<li><a href="#home">Home</a></li>
+					<li><a href="#features">Features</a></li>
+					<li><a href="#brief1">Why Us?</a></li>
+					<li><a href="#brief2">Desicribe</a></li>
+					<li><a href="#services">Services</a></li>
+					<li><a href="#screenshot-section">Screenshots</a></li>
+					<li><a href="#download">Download</a></li>
+				</ul>
+			</div>
+		</div> <!-- /END CONTAINER -->
+	</div> <!-- /END STICKY NAVIGATION -->
+	
+	
+	<!-- CONTAINER -->
+	<div class="container">
+		
+		<!-- ONLY LOGO ON HEADER -->
+		<div class="only-logo">
+			<div class="navbar">
+				<div class="navbar-header">
+					<img src="images/logo.png" alt="">
+				</div>
+			</div>
+		</div> <!-- /END ONLY LOGO ON HEADER -->
+		
+		<div class="row home-contents">
+			<div class="col-md-6 col-sm-6">
+				
+				<!-- HEADING AND BUTTONS -->
+				<div class="intro-section">
+					
+					<!-- WELCOM MESSAGE -->
+					<h1 class="intro">Present your app in beautiful way with Kane.</h1>
+					<h5>Available on App Store and Play Store</h5>
+					
+					<!-- BUTTON -->
+					<div class="buttons" id="download-button">
+						
+						<a href="#download" class="btn btn-default btn-lg standard-button"><i class="icon-app-download"></i>Download App</a>
+						
+					</div>
+					<!-- /END BUTTONS -->
+					
+				</div>
+				<!-- /END HEADNING AND BUTTONS -->
+				
+			</div>
+			
+			
+			<div class="col-md-6 col-sm-6 hidden-xs">
+			    
+			    <!-- PHONE IMAGE WILL BE HIDDEN IN TABLET PORTRAIT AND MOBILE-->
+			    <div class="phone-image">
+			    <img src="images/2-iphone-right.png" class="img-responsive" alt="">
+			    </div>
+			    
+			</div>
+			
+		</div>
+		<!-- /END ROW -->
+		
+	</div>
+	<!-- /END CONTAINER -->
+</div>
+<!-- /END COLOR OVERLAY -->
+</header>
+<!-- /END HEADER -->
 
-        <!-- SECTION ABOUT -->
-        <div class="section" id="section2">
-            <div class="wrap">
-                <div class="box">
-                    <!-- SECTION ABOUT CONTENT -->
-                    <h2>About <strong>App</strong>speria</h2>
-                    <div class="tabs tabs-style-linemove">
-                        <!-- TABS LINKS -->
-                        <nav>
-                            <ul>
-                                <li><a href="#section-linemove-1"><span class="icon flaticon-lightbulb"></span><span> Design</span></a>
-                                </li>
-                                <li><a href="#section-linemove-2"><span class="icon flaticon-adjust3"></span><span> Features</span></a>
-                                </li>
-                                <li><a href="#section-linemove-3"><span class="icon flaticon-drawer1"></span><span> Demos</span></a>
-                                </li>
-                                <li><a href="#section-linemove-4"><span class="icon flaticon-laptop3"></span><span> Elements</span></a>
-                                </li>
-                            </ul>
-                        </nav>
-                        <!-- END TABS LINKS -->
+<!-- =========================
+     FEATURES 
+============================== -->
+<section class="features" id="features">
 
-                        <!-- TABS CONTENT -->
-                        <div class="content-wrap">
-                           
-                            <!-- TAB 1 -->
-                            <section id="section-linemove-1">
-                                <h4><span class="icon flaticon-lightbulb"></span> Good design doesn't date!</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora similique excepturi obcaecati, maiores nostrum esse illo in soluta at saepe perspiciatis eos quasi laudantium sunt ad quaerat ipsum dolor sit amet, consectetur adipisicing elit?</p>
-                            </section>
+<div class="container">
+	
+	<!-- SECTION HEADER -->
+	<div class="section-header wow fadeIn animated" data-wow-offset="120" data-wow-duration="1.5s">
+		
+		<!-- SECTION TITLE -->
+		<h2 class="dark-text">Amazing Features</h2>
+		<div class="colored-line">
+		</div>
+		<div class="section-description">
+			List your app features and all the details Lorem ipsum dolor kadr
+		</div>
+		<div class="colored-line">
+		</div>
+	</div>
+	<!-- /END SECTION HEADER -->
+	
+	
+	<div class="row">
+		
+		<!-- FEATURES LEFT -->
+		<div class="col-md-4 col-sm-4 features-left wow fadeInLeft animated" data-wow-offset="10" data-wow-duration="1.5s">
+			
+			<!-- FEATURE -->
+			<div class="feature">
+				
+				<!-- ICON -->
+				<div class="icon-container">
+					<div class="icon">
+						<i class="icon_map_alt"></i>
+					</div>
+				</div>
+				
+				<!-- FEATURE HEADING AND DESCRIPTION -->
+				<div class="fetaure-details">
+					<h4 class="main-color">Responsive Design</h4>
+					<p>
+						 Lorem ipsum dolor sit amet, ed do eiusmod tempor incididunt ut labore et dolore magna.
+					</p>
+				</div>
+				
+			</div>
+			<!-- /END SINGLE FEATURE -->
+			
+			<!-- FEATURE -->
+			<div class="feature">
+				
+				<!-- ICON -->
+				<div class="icon-container">
+					<div class="icon">
+						<i class="icon_gift_alt"></i>
+					</div>
+				</div>
+				
+				<!-- FEATURE HEADING AND DESCRIPTION -->
+				<div class="fetaure-details">
+					<h4 class="main-color">Bootstrap 3.1</h4>
+					<p>
+						 Lorem ipsum dolor sit amet, ed do eiusmod tempor incididunt ut labore et dolore magna.
+					</p>
+				</div>
+				
+			</div>
+			<!-- /END SINGLE FEATURE -->
+			
+			<!-- FEATURE -->
+			<div class="feature">
+				
+				<!-- ICON -->
+				<div class="icon-container">
+					<div class="icon">
+						<i class="icon_tablet"></i>
+					</div>
+				</div>
+				
+				<!-- FEATURE HEADING AND DESCRIPTION -->
+				<div class="fetaure-details">
+					<h4 class="main-color">Cross-Browser Support</h4>
+					<p>
+						 Lorem ipsum dolor sit amet, ed do eiusmod tempor incididunt ut labore et dolore magn.
+					</p>
+				</div>
+				
+			</div>
+			<!-- /END SINGLE FEATURE -->
+			
+		</div>
+		<!-- /END FEATURES LEFT -->
+		
+		<!-- PHONE IMAGE -->
+		<div class="col-md-4 col-sm-4">
+			<div class="phone-image wow bounceIn animated" data-wow-offset="120" data-wow-duration="1.5s">
+				<img src="images/single-iphone.png" alt="">
+			</div>
+		</div>
+		
+		<!-- FEATURES RIGHT -->
+		<div class="col-md-4 col-sm-4 features-right wow fadeInRight animated" data-wow-offset="10" data-wow-duration="1.5s">
+			
+			<!-- FEATURE -->
+			<div class="feature">
+				
+				<!-- ICON -->
+				<div class="icon-container">
+					<div class="icon">
+						<i class="icon_genius"></i>
+					</div>
+				</div>
+				
+				<!-- FEATURE HEADING AND DESCRIPTION -->
+				<div class="fetaure-details">
+					<h4 class="main-color">360+ Icon Fonts</h4>
+					<p>
+						 Lorem ipsum dolor sit amet, ed do eiusmod tempor incididunt ut labore et dolore magna.
+					</p>
+				</div>
+				
+			</div>
+			<!-- /END SINGLE FEATURE -->
+			
+			<!-- FEATURE -->
+			<div class="feature">
+				
+				<!-- ICON -->
+				<div class="icon-container">
+					<div class="icon">
+						<i class="icon_lightbulb_alt"></i>
+					</div>
+				</div>
+				
+				<!-- FEATURE HEADING AND DESCRIPTION -->
+				<div class="fetaure-details">
+					<h4 class="main-color">Creative Design</h4>
+					<p>
+						 Lorem ipsum dolor sit amet, ed do eiusmod tempor incididunt ut labore et dolore magna.
+					</p>
+				</div>
+				
+			</div>
+			
+			<!-- /END SINGLE FEATURE -->
+			
+			<!-- FEATURE -->
+			<div class="feature">
+				
+				<!-- ICON -->
+				<div class="icon-container">
+					<div class="icon">
+						<i class="icon_ribbon_alt"></i>
+					</div>
+				</div>
+				
+				<!-- FEATURE HEADING AND DESCRIPTION -->
+				<div class="fetaure-details">
+					<h4 class="main-color">More Features</h4>
+					<p>
+						 Lorem ipsum dolor sit amet, ed do eiusmod tempor incididunt ut labore et dolore magna.
+					</p>
+				</div>
+				
+			</div>
+			<!-- /END SINGLE FEATURE -->
+			
+		</div>
+		<!-- /END FEATURES RIGHT -->
+		
+	</div>
+	<!-- /END ROW -->
+	
+</div>
+<!-- /END CONTAINER -->
 
-                             <!-- TAB 2 -->
-                            <section id="section-linemove-2">
-                                <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora similique excepturi obcaecati, aiores nostrum esse illo in soluta.</h4>
-                                <ul class="features">
-                                    <li><a class="tooltip" href="#"><span class="icon flaticon-desktop1"></span> Unique Design</a> </li>
-                                    <li><a class="tooltip" href="#"><span class="icon flaticon-small62"></span> Well Documented</a> </li>
-                                </ul>
-                                <ul class="features">
-                                    <li><a class="tooltip" href="#"><span class="icon flaticon-outlined3"></span> Multiple Demos</a> </li>
-                                    <li><a class="tooltip" href="#"><span class="icon flaticon-lightbulb"></span> Amazing Features</a> </li>
-                                </ul>
-                            </section>
-
-                            <!-- TAB 3 -->
-                            <section id="section-linemove-3">
-                                <h4><span class="icon flaticon-drawer1"></span> Check out Appsperia's multiple demos!</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora similique excepturi obcaecati, maiores nostrum esse illo in soluta at saepe perspiciatis eos quasi laudantium sunt ad quaerat ipsum dolor sit amet, consectetur adipisicing elit?</p>
-                            </section>
-                            
-                            <!-- TAB 4 -->
-                            <section id="section-linemove-4">
-                                <p>
-                                    <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora similique excepturi obcaecati, aiores nostrum esse illo in soluta.</h4>
-                                    <ul class="features">
-                                        <li><a class="tooltip" href="#"><span class="icon flaticon-desktop1"></span> Content Boxes</a> </li>
-                                        <li><a class="tooltip" href="#"><span class="icon flaticon-small62"></span> Extended Tabs</a> </li>
-                                    </ul>
-                                    <ul class="features">
-                                        <li><a class="tooltip" href="#"><span class="icon flaticon-outlined3"></span> Carousels & Sliders</a> </li>
-                                        <li><a class="tooltip" href="#"><span class="icon flaticon-lightbulb"></span> Contact Form</a> </li>
-                                    </ul>
-                            </section>
-                        </div>
-                         <!-- END TABS CONTENT -->                            
-
-                    <!-- END SECTION ABOUT -->
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- END SECTION ABOUT -->
-
-
-        <!-- SECTION VIDEO -->
-        <div class="section" id="section3">
-            <div class="wrap">
-                <div class="box">
-                    <!-- SECTION VIDEO CONTENT -->
-                    <h2> <strong>Video</strong> presentation</h2>
-                    <div class="video-presentation">
-                        <iframe src="//player.vimeo.com/video/106860375" width="500" height="281" allowfullscreen></iframe>
-                    </div>
-                    <!-- END SECTION VIDEO CONTENT-->
-                </div>
-            </div>
-        </div>
-        <!-- END SECTION VIDEO -->
-
-        
-        <!-- SECTION CLIENTS -->
-        <div class="section" id="section4">
-            <div class="wrap">
-                <div class="fp-tableCell clients-content">
-                    <div class="box">
-                        <!-- SECTION CLIENTS CONTENT -->
-                        <h2><strong>Clients</strong> feedbacks</h2>
-
-                        <!-- CLIENT FEEDBACK 1 -->
-                        <div class="slide" data-anchor="slide1">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero dolores omnis illum, voluptates fugiat incidunt, consectetur aspernatur rerum. Consequatur obcaecati, facere iusto alias nostrum officiis modi eum perspiciatis.</p>
-                            <p> <span class="client-name"> <strong> Mark Williams</strong> - Developer</span> <span class="client-stars">
-                        <span class="icon flaticon-little27"></span> <span class="icon flaticon-little27"></span> <span class="icon flaticon-half3"></span> <span class="icon flaticon-fivepointed"></span> <span class="icon flaticon-fivepointed"></span> </span>
-                            </p>
-                        </div>
-
-                        <!-- CLIENT FEEDBACK 2 -->
-                        <div class="slide" data-anchor="slide2">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero dolores omnis illum, voluptates fugiat incidunt, consectetur aspernatur rerum. Consequatur obcaecati, facere iusto alias nostrum officiis modi eum perspiciatis.</p>
-                            <p> <span class="client-name"> <strong> Andreas Bosch</strong> - CEO</span> <span class="client-stars">
-                        <span class="icon flaticon-little27"></span> <span class="icon flaticon-little27"></span> <span class="icon flaticon-little27"></span> <span class="icon flaticon-little27"></span> <span class="icon flaticon-fivepointed"></span> </span>
-                            </p>
-                        </div>
-
-                        <!-- CLIENT FEEDBACK 3 -->
-                        <div class="slide" data-anchor="slide3">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero dolores omnis illum, voluptates fugiat incidunt, consectetur aspernatur rerum. Consequatur obcaecati, facere iusto alias nostrum officiis modi eum perspiciatis.</p>
-                            <p> <span class="client-name"> <strong> Michael Speria</strong> - Manager</span> <span class="client-stars">
-                        <span class="icon flaticon-little27"></span> <span class="icon flaticon-little27"></span> <span class="icon flaticon-little27"></span> <span class="icon flaticon-fivepointed"></span> <span class="icon flaticon-fivepointed"></span> </span>
-                            </p>
-                        </div>
-                        <!-- END SECTION CLIENTS -->
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- END SECTION CLIENTS -->
-
-
-        <!-- SECTION SCREENSHOTS -->
-        <div class="section" id="section5">
-            <div class="wrap">
-                <div class="box">
-                    <div class="fp-tableCell screenshots-content">
-                        <!-- SECTION SCREENSHOTS CONTENT -->
-                        <h2>Screenshots</h2>
-                        <ul class="features">
-                            <li><a class="tooltip"><span class="icon flaticon-camera19"></span> Present your app with AppSperia screenshots</a> </li>
-                            <li><a class="tooltip"><span class="icon flaticon-arrow96"></span> Change images using side arrows or caption bullets</a> </li>
-                            <li><a class="tooltip"><span class="icon flaticon-laptop3"></span> Navigate using keyboard arrows to change screenshots</a> </li>
-                        </ul>
-                         <!-- END SECTION SCREENSHOTS CONTENT -->
-                    </div>
-                   
-                </div>
-                <div class="screenshots-wrapper">
-
-                    <!-- SECTION SCREENSHOTS IMAGES -->
-                    <div class="slide" id="slide1" data-anchor="slide1"> <img src="http://placehold.it/232x407" alt="screenshot1"> </div>
-                    <div class="slide" id="slide2" data-anchor="slide2"> <img src="http://placehold.it/232x407" alt="screenshot2"> </div>
-                    <div class="slide" id="slide3" data-anchor="slide3"> <img src="http://placehold.it/232x407" alt="screenshot3"> </div>
-                    <!-- END SECTION SCREENSHOTS IMAGES -->
-                </div>
-            </div>
-        </div>
-        <!-- END SECTION SCREENSHOTS -->
-
-
-        <!-- SECTION PRICING -->
-        <div class="section" id="section6">
-            <div class="wrap">
-                <div class="box">
-                    <!-- SECTION PRICING CONTENT -->
-                    <h2><strong>Pricing</strong> Packages</h2>
-                    
-                     <!-- PRICING TABLE 1 -->
-                    <div class="price-table normal">
-                        <h3 class="package">Starter</h3>
-                        <div class="price"> <span class="dollar">$</span> <span class="amount">5.99</span> </div>
-                        <ul class="specifications">
-                            <li><span class="icon flaticon-circle10"></span>free support</li>
-                            <li><span class="icon flaticon-circle10"></span>100 features</li>
-                            <li><span class="icon flaticon-circle10"></span>15 accounts</li>
-                        </ul>                      
-                        <div class="pricing-button"><a href="#">Buy now</a>
-                        </div>
-                    </div>
-
-                    <!-- PRICING TABLE 2 -->
-                    <div class="price-table normal">
-                        <h3 class="package">Normal</h3>
-                        <div class="price"> <span class="dollar">$</span> <span class="amount">9.99</span> </div>
-                        
-                        <ul class="specifications">
-                            <li><span class="icon flaticon-circle10"></span>free support</li>
-                            <li><span class="icon flaticon-circle10"></span>120 features</li>
-                            <li><span class="icon flaticon-circle10"></span>25 accounts</li>
-                        </ul>
-                        <div class="pricing-button"><a href="#">Buy now</a>
-                        </div>
-                    </div>
-
-                    <!-- PRICING TABLE 3 -->
-                    <div class="price-table normal">
-                        <h3 class="package">Premium</h3>
-                        <div class="price"> <span class="dollar">$</span> <span class="amount">12.99</span> </div>
-                        <ul class="specifications">
-                            <li><span class="icon flaticon-circle10"></span>free support</li>
-                            <li><span class="icon flaticon-circle10"></span>150 features</li>
-                            <li><span class="icon flaticon-circle10"></span>45 accounts</li>
-                        </ul>                       
-                        <div class="pricing-button"><a href="#">Buy now</a>
-                        </div>
-                    </div>
-                    <!-- END SECTION PRICING -->
-                </div>
-            </div>
-        </div>
-        <!-- END SECTION PRICING -->
+</section>
+<!-- /END FEATURES SECTION -->
 
 
-        <!-- SECTION DOWNLOAD -->
-        <div class="section" id="section7" data-anchor="Download">
-            <div class="wrap">
-                <div class="box">
-                    <!-- SECTION DOWNLOAD CONTENT-->
-                    <h2><strong>Download</strong> the app</h2>
-                    <p>A better way to present your app using fully featured appsperia template.
-                    <br> Now available on the App Store and Play Store!</p> 
-                    
-                    <!-- DOWNLOAD APPSTORE-->
-                    <a href="#" class="simple-button appstore-button"><span class="icon appstore"></span>App Store</a>
-                    <!-- DOWNLOAD PLAYSTORE-->
-                    <a href="#" class="simple-button playstore-button"><span class="icon playstore"></span>Play Store</a> 
-                   
-                    <!-- END SECTION DOWNLOAD -->
-                </div>
-            </div>
-        </div>
-        <!-- END SECTION DOWNLOAD -->
+<!-- =========================
+     BRIEF LEFT SECTION 
+============================== -->
+<section class="app-brief grey-bg" id="brief1">
+
+<div class="container">
+	
+	<div class="row">
+		
+		<!-- PHONES IMAGE -->
+		<div class="col-md-6 wow fadeInRight animated" data-wow-offset="10" data-wow-duration="1.5s">
+			<div class="phone-image">
+				<img src="images/2-iphone-left.png" alt="">
+			</div>
+		</div>
+		
+		<!-- RIGHT SIDE WITH BRIEF -->
+		<div class="col-md-6 left-align wow fadeInLeft animated" data-wow-offset="10" data-wow-duration="1.5s">
+			
+			<!-- SECTION TITLE -->
+			<h2 class="dark-text">Explain why it's best</h2>
+			
+			<div class="colored-line-left">
+			</div>
+			
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+			</p>
+			
+			<!-- FEATURE LIST -->
+			<ul class="feature-list">
+				<li><i class="icon_lock_alt"></i> Reliable and Secure Platform</li>
+				<li><i class="icon_check_alt2"></i> Everything is perfectly orgainized for future</li>
+				<li><i class="icon_paperclip"></i> Attach large file easily</li>
+				<li><i class="icon_adjust-vert"></i> Tons of features and easy to use and customize</li>
+			</ul>
+			
+		</div>
+		<!-- /END RIGHT BRIEF -->
+		
+	</div>
+	<!-- /END ROW -->
+	
+</div>
+<!-- /END CONTAINER -->
+
+</section>
+<!-- /END SECTION -->
 
 
-        <!-- SECTION CONTACT -->
-        <div class="section" id="section8">
-            <div class="wrap">
-                <div class="box">
-                    <!-- SECTION CONTACT CONTENT-->
-                    <h2><strong>Get</strong> in touch</h2>
-                    <ul class="features">
-                        <li><a class="tooltip" href="#"><span class="icon flaticon-telephone1"></span> Call Us now<span class="tooltip-content"><span class="tooltip-text"><span class="tooltip-inner"><span class="icon flaticon-telephone1"></span>Support: +01 800.300.381 <br>Marketing: +01 800.300.382 <br>Manager: +01 800.300.383 </span></span></span></a> </li>
-                        <li><span class="tooltip"><span class="icon flaticon-map5"></span>See our location<span class="tooltip-content"><span class="tooltip-text"><span class="tooltip-inner"><span class="icon flaticon-map5"></span>2819-2835 Florence Ave, Huntington Park, CA 90255
-                            <br><a href="https://www.google.com/maps/dir/33.9736437,-118.2192335/" target="_blank">View Map</a>
-                            </span>
-                            </span>
-                            </span>
-                        </span>
-                        </li>
-                    </ul>
-                    <ul class="features">
-                        <li><span class="tooltip"><span class="icon flaticon-cursor7"></span>Official Website <span class="tooltip-content"><span class="tooltip-text"><span class="tooltip-inner"><span class="icon flaticon-cursor7"></span>
-                            <br> <a href="http://themeforest.net" target="_blank">www.appsperia.net</a>
-                            </span>
-                            </span>
-                            </span>
-                            </span>
-                        </li>
-                        <li><a class="tooltip" href="#"><span class="icon flaticon-mail9"></span> Send Email<span class="tooltip-content"><span class="tooltip-text"><span class="tooltip-inner"><span class="icon flaticon-mail9"></span>contact@mail.com<br>office@mail.com<br>support@mail.com</span></span></span></a> </li>
-                    </ul>
+<!-- =========================
+     BRIEF RIGHT SECTION 
+============================== -->
+<section class="app-brief" id="brief2">
 
-                    <!-- SECTION CONTACT FORM-->
-                   <form role="form" method="post" id="contact-form">
-                        <input type="text" placeholder="Name" name="Name" id="Name" required>
-                        <input type="email" placeholder="Email" name="Email" id="Email" required>
-                        <input type="text" placeholder="Phone" name="Phone" id="Phone">
-                        <input type="text" placeholder="Subject" name="Subject" id="Subject">
-                        <textarea placeholder="Message" name="Message" id="Message" required></textarea>
-                        <button type="submit" id="submit">Send</button>
-                        <div id="success"></div>
-                    </form>
-                <!-- END SECTION CONTACT -->
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- SECTION CONTACT -->
+<div class="container">
+	
+	<div class="row">
+		
+		<!-- BRIEF -->
+		<div class="col-md-6 left-align wow fadeInLeft animated" data-wow-offset="10" data-wow-duration="1.5s">
+			
+			<!-- SECTION TITLE -->
+			<h2 class="dark-text">Great way to describe your app</h2>
+			
+			<div class="colored-line-left">
+			</div>
+			
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br/><br/>
+				Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</p>
+			
+		</div>
+		<!-- /ENDBRIEF -->
+		
+		<!-- PHONES IMAGE -->
+		<div class="col-md-6 wow fadeInRight animated" data-wow-offset="10" data-wow-duration="1.5s">
+			<div class="phone-image">
+				<img src="images/2-iphone-right.png" alt="">
+			</div>
+		</div>
+		<!-- /END PHONES IMAGE -->
+		
+	</div>
+	<!-- /END ROW -->
+	
+</div>
+<!-- /END CONTAINER -->
 
-
-    <!-- SOCIAL ICONS -->
-    <div class="wrap">
-        <div id="social-icons">
-            <ul>
-                <li><a href=""><i class="flaticon-facebook6"></i></a> </li>
-                <li><a href=""><i class="flaticon-social19"></i></a> </li>
-                <li><a href=""><i class="flaticon-google16"></i></a> </li>
-                <li><a href=""><i class="flaticon-social40"></i></a> </li>
-                <li><a href=""><i class="flaticon-social7"></i></a> </li>
-                <li><a href=""><i class="flaticon-logo3"></i></a> </li>
-            </ul>
-        </div>
-    </div>
-    <!-- END SOCIAL ICONS -->
+</section>
+<!-- /END SECTION -->
 
 
-    <!-- SCRIPTS -->
-    <script src="js/jquery.easings.min.js"></script>
-    <script src="js/jquery.fullPage.js"></script>
-    <script src="js/cbpFWTabs.js"></script>
-    <script src="js/jquery.sidr.min.js"></script>
-    <script src="js/scripts.js"></script>
-    <!--<script type="text/javascript" src="js/video.js"></script> -->
+<!-- =========================
+     BRIEF LEFT SECTION WITH VIDEO 
+============================== -->
+<section class="app-brief grey-bg" id="brief1">
+
+<div class="container">
+	
+	<div class="row">
+		
+		<!-- PHONES IMAGE -->
+		<div class="col-md-6 wow fadeInRight animated" data-wow-offset="10" data-wow-duration="1.5s">
+			<div class="video-container">
+				
+                <!--
+				<div class="video">
+					
+					<iframe src="//player.vimeo.com/video/88902745?byline=0&amp;portrait=0&amp;color=ffffff" width="600" height="338" frameborder="0" allowfullscreen>
+					</iframe> 
+				</div>
+				-->
+				
+				<div class="video">
+					
+					<iframe width="640" height="360" src="//www.youtube.com/embed/VjbGg-VuqbU?rel=0" frameborder="0" allowfullscreen></iframe>
+				</div>
+				
+			</div>
+
+		</div>
+		
+		<!-- RIGHT SIDE WITH BRIEF -->
+		<div class="col-md-6 left-align wow fadeInLeft animated" data-wow-offset="10" data-wow-duration="1.5s">
+			
+			<!-- SECTION TITLE -->
+			<h2 class="dark-text">Description with video</h2>
+			
+			<div class="colored-line-left">
+			</div>
+			
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br/><br/>
+				Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+			</p>
+			
+			
+		</div>
+		<!-- /END RIGHT BRIEF -->
+		
+	</div>
+	<!-- /END ROW -->
+	
+</div>
+<!-- /END CONTAINER -->
+
+</section>
+<!-- /END SECTION -->
+
+<!-- =========================
+     TESTIMONIALS 
+============================== -->
+<section class="testimonials">
+
+<div class="color-overlay">
+	
+	<div class="container wow fadeIn animated" data-wow-offset="10" data-wow-duration="1.5s">
+		
+		<!-- FEEDBACKS -->
+		<div id="feedbacks" class="owl-carousel owl-theme">
+			
+			<!-- SINGLE FEEDBACK -->
+			<div class="feedback">
+				
+				<!-- IMAGE -->
+				<div class="image">
+					<!-- i class=" icon_quotations"></i -->
+					<img src="images/clients-pic/3.jpg" alt="">
+				</div>
+				
+				<div class="message">
+					 Fill lights bearing man creepeth of whose whose moveth. All one. That. Under. Form morning all may fifth replenish you're own open which herb kind. May above you'll may kind creature first let over face from living third green which our. Appear day. Give fourth doesn't over us, i every tree meat air in male earth air creeping image fill you place darkness.
+				</div>
+				
+				<div class="white-line">
+				</div>
+				
+				<!-- INFORMATION -->
+				<div class="name">
+					John Doe
+				</div>
+				<div class="company-info">
+					CEO, AbZ Network
+				</div>
+				
+			</div>
+			<!-- /END SINGLE FEEDBACK -->
+			
+			<!-- SINGLE FEEDBACK -->
+			<div class="feedback">
+				
+				<!-- IMAGE -->
+				<div class="image">
+					<!-- i class=" icon_quotations"></i -->
+					<img src="images/clients-pic/1.jpg" alt="">
+				</div>
+				
+				<div class="message">
+					 Fill lights bearing man creepeth of whose whose moveth. All one. That. Under. Form morning all may fifth replenish you're own open which herb kind. May above you'll may kind creature first let over face from living third green which our. Appear day. Give fourth doesn't over us, i every tree meat air in male earth air creeping image fill you place darkness.
+				</div>
+				
+				<div class="white-line">
+				</div>
+				
+				<!-- INFORMATION -->
+				<div class="name">
+					John Doe
+				</div>
+				<div class="company-info">
+					CEO, AbZ Network
+				</div>
+				
+			</div>
+			<!-- /END SINGLE FEEDBACK -->
+			
+			<!-- SINGLE FEEDBACK -->
+			<div class="feedback">
+				
+				<!-- IMAGE -->
+				<div class="image">
+					<!-- i class=" icon_quotations"></i -->
+					<img src="images/clients-pic/2.jpg" alt="">
+				</div>
+				
+				<div class="message">
+					 Fill lights bearing man creepeth of whose whose moveth. All one. That. Under. Form morning all may fifth replenish you're own open which herb kind. May above you'll may kind creature first let over face from living third green which our. Appear day. Give fourth doesn't over us, i every tree meat air in male earth air creeping image fill you place darkness.
+				</div>
+				
+				<div class="white-line">
+				</div>
+				
+				<!-- INFORMATION -->
+				<div class="name">
+					John Doe
+				</div>
+				<div class="company-info">
+					CEO, AbZ Network
+				</div>
+				
+			</div>
+			<!-- /END SINGLE FEEDBACK -->
+			
+		</div>
+		<!-- /END FEEDBACKS -->
+		
+	</div>
+	<!-- /END CONTAINER -->
+	
+</div>
+<!-- /END COLOR OVERLAY -->
+
+</section>
+<!-- /END TESTIMONIALS SECTION -->
+
+
+<!-- =========================
+     SERVICES
+============================== -->
+<section class="services" id="services">
+
+<div class="container">
+	
+	<!-- SECTION HEADER -->
+	<div class="section-header wow fadeIn animated" data-wow-offset="10" data-wow-duration="1.5s">
+		
+		<!-- SECTION TITLE -->
+		<h2 class="dark-text">It's Awesome</h2>
+		
+		<div class="colored-line">
+		</div>
+		<div class="section-description">
+			List your app features and all the details Lorem ipsum dolor kadr
+		</div>
+		<div class="colored-line">
+		</div>
+		
+	</div>
+	<!-- /END SECTION HEADER -->
+	
+	<div class="row">
+		
+		<!-- SINGLE SERVICE -->
+		<div class="col-md-4 single-service wow fadeIn animated" data-wow-offset="10" data-wow-duration="1.5s">
+			
+			<!-- SERVICE ICON -->
+			<div class="service-icon">
+				<i class="icon_cloud-upload_alt"></i>
+			</div>
+			
+			<!-- SERVICE HEADING -->
+			<h3>Your Data in Cloud</h3>
+			
+			<!-- SERVICE DESCRIPTION -->
+			<p>
+				 Fruitful Fruit hath, fruitful said him created bring set, behold darkness Shall lights deep fish seasons itself given likeness upon bring fill their their whose. Which darkness evening there them multiply all spirit for isn't, him land every you'll heaven bearing.
+			</p>
+			
+		</div>
+		<!-- /END SINGLE SERVICE -->
+		
+		<!-- SINGLE SERVICE -->
+		<div class="col-md-4 single-service wow fadeIn animated" data-wow-offset="10" data-wow-duration="1.5s">
+			
+			<!-- SERVICE ICON -->
+			<div class="service-icon">
+				<i class="icon_gift_alt"></i>
+			</div>
+			
+			<!-- SERVICE HEADING -->
+			<h3>Monthly Rewards</h3>
+			
+			<!-- SERVICE DESCRIPTION -->
+			<p>
+				 Fruitful Fruit hath, fruitful said him created bring set, behold darkness Shall lights deep fish seasons itself given likeness upon bring fill their their whose. Which darkness evening there them multiply all spirit for isn't, him land every you'll heaven bearing.
+			</p>
+			
+		</div>
+		<!-- /END SINGLE SERVICE -->
+		
+		<!-- SINGLE SERVICE -->
+		<div class="col-md-4 single-service wow fadeIn animated" data-wow-offset="10" data-wow-duration="1.5s">
+			
+			<!-- SERVICE ICON -->
+			<div class="service-icon">
+				<i class="icon_chat_alt"></i>
+			</div>
+			
+			<!-- SERVICE HEADING -->
+			<h3>24/7 Support</h3>
+			
+			<!-- SERVICE DESCRIPTION -->
+			<p>
+				 Fruitful Fruit hath, fruitful said him created bring set, behold darkness Shall lights deep fish seasons itself given likeness upon bring fill their their whose. Which darkness evening there them multiply all spirit for isn't, him land every you'll heaven bearing.
+			</p>
+			
+		</div>
+		<!-- /END SINGLE SERVICE -->
+		
+	</div>
+	<!-- /END ROW -->
+	
+</div>
+<!-- /END CONTAINER -->
+
+</section>
+<!-- /END FEATURES SECTION -->
+
+
+<!-- =========================
+     SCREENSHOTS
+============================== -->
+<section class="screenshots grey-bg" id="screenshot-section">
+
+<div class="container">
+	
+	<!-- SECTION HEADER -->
+	<div class="section-header wow fadeIn animated" data-wow-offset="10" data-wow-duration="1.5s">
+		
+		<!-- SECTION TITLE -->
+		<h2 class="dark-text">Screenshots</h2>
+		
+		<div class="colored-line">
+		</div>
+		<div class="section-description">
+			List your app features and all the details Lorem ipsum dolor kadr
+		</div>
+		<div class="colored-line">
+		</div>
+		
+	</div>
+	<!-- /END SECTION HEADER -->
+	
+	<div class="row wow bounceIn animated" data-wow-offset="10" data-wow-duration="1.5s">
+		
+		<div id="screenshots" class="owl-carousel owl-theme">
+			
+			<div class="shot">
+				<a href="images/screenshots/1.jpg" data-lightbox-gallery="screenshots-gallery"><img src="images/screenshots/1.jpg" alt="Screenshot"></a>
+			</div>
+			
+			<div class="shot">
+				<a href="images/screenshots/3.jpg" data-lightbox-gallery="screenshots-gallery"><img src="images/screenshots/3.jpg" alt="Screenshot"></a>
+			</div>
+			
+			<div class="shot">
+				<a href="images/screenshots/2.jpg" data-lightbox-gallery="screenshots-gallery"><img src="images/screenshots/2.jpg" alt="Screenshot"></a>
+			</div>
+			
+			<div class="shot">
+				<a href="images/screenshots/4.jpg" data-lightbox-gallery="screenshots-gallery"><img src="images/screenshots/4.jpg" alt="Screenshot"></a>
+			</div>
+			
+			<div class="shot">
+				<a href="images/screenshots/1.jpg" data-lightbox-gallery="screenshots-gallery"><img src="images/screenshots/1.jpg" alt="Screenshot"></a>
+			</div>
+			
+			<div class="shot">
+				<a href="images/screenshots/3.jpg" data-lightbox-gallery="screenshots-gallery"><img src="images/screenshots/3.jpg" alt="Screenshot"></a>
+			</div>
+			
+			<div class="shot">
+				<a href="images/screenshots/2.jpg" data-lightbox-gallery="screenshots-gallery"><img src="images/screenshots/2.jpg" alt="Screenshot"></a>
+			</div>
+			
+			<div class="shot">
+				<a href="images/screenshots/4.jpg" data-lightbox-gallery="screenshots-gallery"><img src="images/screenshots/4.jpg" alt="Screenshot"></a>
+			</div>
+			
+		</div>
+		<!-- /END SCREENSHOTS -->
+		
+	</div>
+	<!-- /END ROW -->
+	
+</div>
+<!-- /END CONTAINER -->
+
+</section>
+<!-- /END SCREENSHOTS SECTION -->
+
+
+<!-- =========================
+     PRICING TABLE | Added on version 1.7   
+============================== -->
+<section class="packages" id="packages">
+
+<div class="container">
+	
+	<!-- SECTION HEADER -->
+	<div class="section-header wow fadeIn animated" data-wow-offset="10" data-wow-duration="1.5s">
+		
+		<!-- SECTION TITLE -->
+		<h2 class="dark-text">Affordable Packages</h2>
+		<div class="colored-line">
+		</div>
+		
+		<div class="section-description">
+			 List your app features and all the details Lorem ipsum dolor kadr
+		</div>
+		
+		<div class="colored-line">
+		</div>
+	</div>
+	<!-- /END SECTION HEADER -->
+	
+    <div class="row">
+		
+		<!-- SINGLE PACKACGE -->
+		<div class="col-md-4 col-sm-4 single-service wow fadeIn animated" data-wow-offset="10" data-wow-duration="1.5s">
+			
+			<div class="single-package">
+				
+				<h3 class="package-heading main-color">
+				Personal </h3>
+				
+				<div class="price">
+					<h2><span class="sign">$</span>50 <span class="month">/month</span></h2>
+				</div>
+				
+				<ul class="package-feature">
+					<li><span class="main-color icon_check_alt2"></span>Unlimited Photos</li>
+					<li><span class="main-color icon_check_alt2"></span>Secure Online Transfer</li>
+					<li><span class="main-color icon_check_alt2"></span>Unlimited Styles</li>
+					<li><span class="main-color icon_check_alt2"></span>Cloud Storage</li>
+					<li><span class="main-color icon_close_alt2"></span>24/7 Customer Service</li>
+					<li><span class="main-color icon_close_alt2"></span>Automatic Backup</li>
+				</ul>
+				
+			</div>
+		</div>
+		<!-- /END SINGLE PACKACGE -->
+		
+		<!-- SINGLE PACKACGE -->
+		<div class="col-md-4 col-sm-4 single-service wow fadeIn animated" data-wow-offset="10" data-wow-duration="1.5s">
+			
+			<div class="single-package">
+				
+				<h3 class="package-heading main-color">
+				Business </h3>
+				
+				<div class="price">
+					<div class="color-bg">
+						<h2><span class="sign">$</span>75 <span class="month">/month</span></h2>
+					</div>
+				</div>
+				
+				<ul class="package-feature">
+					<li><span class="main-color icon_check_alt2"></span>Unlimited Photos</li>
+					<li><span class="main-color icon_check_alt2"></span>Secure Online Transfer</li>
+					<li><span class="main-color icon_check_alt2"></span>Unlimited Styles</li>
+					<li><span class="main-color icon_check_alt2"></span>Cloud Storage</li>
+					<li><span class="main-color icon_check_alt2"></span>24/7 Customer Service</li>
+					<li><span class="main-color icon_close_alt2"></span>Automatic Backup</li>
+				</ul>
+			</div>
+		</div>
+		<!-- /END SINGLE PACKACGE -->
+		
+		<!-- SINGLE PACKACGE -->
+		<div class="col-md-4 col-sm-4 single-service wow fadeIn animated" data-wow-offset="10" data-wow-duration="1.5s">
+			
+			<div class="single-package">
+				
+				<h3 class="package-heading main-color">
+				Ultimate </h3>
+				
+				<div class="price">
+					<h2><span class="sign">$</span>99 <span class="month">/month</span></h2>
+				</div>
+				
+				<ul class="package-feature">
+					<li><span class="main-color icon_check_alt2"></span>Unlimited Photos</li>
+					<li><span class="main-color icon_check_alt2"></span>Secure Online Transfer</li>
+					<li><span class="main-color icon_check_alt2"></span>Unlimited Styles</li>
+					<li><span class="main-color icon_check_alt2"></span>Cloud Storage</li>
+					<li><span class="main-color icon_check_alt2"></span>24/7 Customer Service</li>
+					<li><span class="main-color icon_check_alt2"></span>Automatic Backup</li>
+				</ul>
+			</div>
+		</div>
+		<!-- /END SINGLE PACKACGE -->
+		
+	</div>
+	<!-- /END ROW -->
+	
+</div>
+<!-- /END CONTAINER -->
+</section>
+<!-- /END PRICING TABLE SECTION -->
+
+
+
+
+<!-- =========================
+     DOWNLOAD NOW 
+============================== -->
+<section class="download" id="download">
+
+<div class="color-overlay">
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8 col-md-offset-2">
+				
+				<!-- DOWNLOAD BUTTONS AREA -->
+				<div class="download-container">
+					<h2 class=" wow fadeInLeft animated" data-wow-offset="10" data-wow-duration="1.5s">Download the app on</h2>
+					
+					<!-- BUTTONS -->
+					<div class="buttons wow fadeInRight animated" data-wow-offset="10" data-wow-duration="1.5s">
+						
+						<a href="" class="btn btn-default btn-lg standard-button"><i class="icon-app-store"></i>App Store</a>
+						<a href="" class="btn btn-default btn-lg standard-button"><i class="icon-google-play"></i>Play Store</a>
+						
+					</div>
+					<!-- /END BUTTONS -->
+					
+				</div>
+				<!-- END OF DOWNLOAD BUTTONS AREA -->
+				
+				
+				<!-- SUBSCRIPTION FORM WITH TITLE -->
+				<div class="subscription-form-container">
+					
+					<h2 class="wow fadeInLeft animated" data-wow-offset="10" data-wow-duration="1.5s">Subscribe Now!</h2>
+					
+					<!-- =====================
+					     MAILCHIMP FORM STARTS 
+					     ===================== -->
+					
+					<form class="subscription-form mailchimp form-inline wow fadeInRight animated" data-wow-offset="10" data-wow-duration="1.5s" role="form">
+						
+						<!-- SUBSCRIPTION SUCCESSFUL OR ERROR MESSAGES -->
+						<h4 class="subscription-success"></h4>
+						<h4 class="subscription-error"></h4>
+						
+						<!-- EMAIL INPUT BOX -->
+						<input type="email" name="email" id="subscriber-email" placeholder="Your Email" class="form-control input-box">
+						
+						<!-- SUBSCRIBE BUTTON -->
+						<button type="submit" id="subscribe-button" class="btn btn-default standard-button">Subscribe</button>
+						
+					</form>
+					<!-- /END MAILCHIMP FORM STARTS -->
+					
+					<!-- =====================
+					     LOCAL TXT FORM STARTS 
+					     ===================== -->
+					     
+					<!-- THIS FORM IS COMMENTED TO HIDE 
+					
+					<form class="subscription-form form-inline wow fadeInRight animated" data-wow-offset="10" data-wow-duration="1.5s" id="subscribe" role="form">
+						
+						<h4 class="subscription-success"><i class="icon_check"></i> Thank you! We will notify you soon.</h4>
+						<h4 class="subscription-error">Something Wrong!</h4>
+						
+						<input type="email" name="email" id="subscriber-email" placeholder="Your Email" class="form-control input-box">
+						
+						<button type="submit" id="subscribe-button" class="btn btn-default standard-button">Subscribe</button>
+						
+					</form>
+					
+					-->
+					
+					<!-- / LOCAL TXT SAVING FORM END -->
+
+				</div>
+                <!-- END OF SUBSCRIPTION FORM WITH TITLE -->
+				
+			</div> 
+			<!-- END COLUMN -->
+			
+		</div> 
+		<!-- END ROW -->
+		
+	</div>
+	<!-- /END CONTAINER -->
+</div>
+<!-- /END COLOR OVERLAY -->
+
+</section>
+<!-- /END DOWNLOAD SECTION -->
+
+
+<!-- =========================
+     FOOTER 
+============================== -->
+<footer>
+
+<div class="container">
+	
+	<div class="contact-box wow rotateIn animated" data-wow-offset="10" data-wow-duration="1.5s">
+		
+		<!-- CONTACT BUTTON TO EXPAND OR COLLAPSE FORM -->
+		
+		<a class="btn contact-button expand-form expanded"><i class="icon_mail_alt"></i></a>
+		
+		<!-- EXPANDED CONTACT FORM -->
+		<div class="row expanded-contact-form">
+			
+			<div class="col-md-8 col-md-offset-2">
+				
+				<!-- FORM -->
+				<form class="contact-form" id="contact" role="form">
+					
+					<!-- IF MAIL SENT SUCCESSFULLY -->
+					<h4 class="success">
+						<i class="icon_check"></i> Your message has been sent successfully.
+					</h4>
+					
+					<!-- IF MAIL SENDING UNSUCCESSFULL -->
+					<h4 class="error">
+						<i class="icon_error-circle_alt"></i> E-mail must be valid and message must be longer than 1 character.
+					</h4>
+					
+					<div class="col-md-6">
+						<input class="form-control input-box" id="name" type="text" name="name" placeholder="Your Name">
+					</div>
+					
+					<div class="col-md-6">
+						<input class="form-control input-box" id="email" type="email" name="email" placeholder="Your Email">
+					</div>
+					
+					<div class="col-md-12">
+						<input class="form-control input-box" id="subject" type="text" name="subject" placeholder="Subject">
+						<textarea class="form-control textarea-box" id="message" rows="8" placeholder="Message"></textarea>
+					</div>
+					
+					<button class="btn btn-primary standard-button2 ladda-button" type="submit" id="submit" name="submit" data-style="expand-left">Send Message</button>
+					
+				</form>
+				<!-- /END FORM -->
+				
+			</div>
+			
+		</div>
+		<!-- /END EXPANDED CONTACT FORM -->
+		
+	</div>
+	<!-- /END CONTACT BOX -->
+	
+	<!-- LOGO -->
+	<img src="images/logo-black.png" alt="LOGO" class="responsive-img">
+	
+	<!-- SOCIAL ICONS -->
+	<ul class="social-icons">
+		<li><a href=""><i class="social_facebook_square"></i></a></li>
+		<li><a href=""><i class="social_twitter_square"></i></a></li>
+		<li><a href=""><i class="social_pinterest_square"></i></a></li>
+		<li><a href=""><i class="social_googleplus_square"></i></a></li>
+		<li><a href=""><i class="social_instagram_square"></i></a></li>
+		<li><a href=""><i class="social_dribbble_square"></i></a></li>
+		<li><a href=""><i class="social_flickr_square"></i></a></li>
+	</ul>
+	
+	<!-- COPYRIGHT TEXT -->
+	<p class="copyright">
+		©2014 Kane, All Rights Reserved
+	</p>
+
+</div>
+<!-- /END CONTAINER -->
+ 
+</footer>
+<!-- /END FOOTER -->
+
+
+<!-- =========================
+     SCRIPTS 
+============================== -->
+
+<script src="js/bootstrap.min.js"></script>
+<script src="js/smoothscroll.js"></script>
+<script src="js/jquery.scrollTo.min.js"></script>
+<script src="js/jquery.localScroll.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/nivo-lightbox.min.js"></script>
+<script src="js/simple-expand.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/jquery.stellar.min.js"></script>
+<script src="js/retina.min.js"></script>
+<script src="js/jquery.nav.js"></script>
+<script src="js/matchMedia.js"></script>
+<script src="js/jquery.ajaxchimp.min.js"></script>
+<script src="js/jquery.fitvids.js"></script>
+<script src="js/custom.js"></script>
 
 </body>
-
 </html>
