@@ -1,1086 +1,566 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="description" content="Responsive Bootstrap App Landing Page Template">
-<meta name="keywords" content="Kane, Bootstrap, Landing page, Template, App, Mobile">
-<meta name="author" content="Mizanur Rahman">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-<!-- SITE TITLE -->
-<title>Kane - Responsive App Landing Page</title>
+<!-- Html Page Specific -->
+<meta charset="utf-8">
+<title>RAY - App Landing Page</title>
+<meta name="description" content="RAY - App Landing Page">
+<meta name="author" content="Multifour | multifour.com">
 
-<!-- =========================
-      FAV AND TOUCH ICONS  
-============================== -->
-<link rel="icon" href="images/favicon.ico">
+<!-- Mobile Specific -->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+
+<!--[if lt IE 9]>
+    <script type="text/javascript" src="scripts/html5shiv.js"></script>
+<![endif]-->
+
+<!-- CSS -->
+<link rel="stylesheet" href="css/bootstrap.min.css"/>
+<link rel="stylesheet" href="css/animate.css"/>
+<link rel="stylesheet" href="css/simple-line-icons.css"/>
+<link rel="stylesheet" href="css/icomoon-soc-icons.css"/>
+<link rel="stylesheet" href="css/magnific-popup.css"/>
+<link rel="stylesheet" href="css/style.css"/>
+
+<!-- Favicons -->
+<link rel="icon" href="images/favicon.png">
 <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
 <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
 <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
-
-<!-- =========================
-     STYLESHEETS   
-============================== -->
-<!-- BOOTSTRAP -->
-<link rel="stylesheet" href="css/bootstrap.min.css">
-
-<!-- FONT ICONS -->
-<link rel="stylesheet" href="assets/elegant-icons/style.css">
-<link rel="stylesheet" href="assets/app-icons/styles.css">
-<!--[if lte IE 7]><script src="lte-ie7.js"></script><![endif]-->
-
-<!-- WEB FONTS -->
-<link href='http://fonts.googleapis.com/css?family=Roboto:100,300,100italic,400,300italic' rel='stylesheet' type='text/css'>
-
-<!-- CAROUSEL AND LIGHTBOX -->
-<link rel="stylesheet" href="css/owl.theme.css">
-<link rel="stylesheet" href="css/owl.carousel.css">
-<link rel="stylesheet" href="css/nivo-lightbox.css">
-<link rel="stylesheet" href="css/nivo_themes/default/default.css">
-
-<!-- ANIMATIONS -->
-<link rel="stylesheet" href="css/animate.min.css">
-
-<!-- CUSTOM STYLESHEETS -->
-<link rel="stylesheet" href="css/styles.css">
-
-<!-- COLORS -->
-<link rel="stylesheet" href="css/colors/blue.css"> <!-- DEFAULT COLOR/ CURRENTLY USING -->
-<!-- <link rel="stylesheet" href="css/colors/red.css"> --> 
-<!-- <link rel="stylesheet" href="css/colors/green.css"> --> 
-<!-- <link rel="stylesheet" href="css/colors/purple.css"> --> 
-<!-- <link rel="stylesheet" href="css/colors/orange.css"> --> 
-<!-- <link rel="stylesheet" href="css/colors/blue-munsell.css"> --> 
-<!-- <link rel="stylesheet" href="css/colors/slate.css"> --> 
-<!-- <link rel="stylesheet" href="css/colors/yellow.css"> -->
-
-<!-- RESPONSIVE FIXES -->
-<link rel="stylesheet" href="css/responsive.css">
-
-
-<!--[if lt IE 9]>
-			<script src="js/html5shiv.js"></script>
-			<script src="js/respond.min.js"></script>
-<![endif]-->
-
-<!-- JQUERY -->
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-
 </head>
 
-<body>
-<!-- =========================
-     PRE LOADER       
-============================== -->
-<div class="preloader">
-  <div class="status">&nbsp;</div>
+<body data-spy="scroll" data-target=".navMenuCollapse">
+
+<!-- PRELOADER -->
+<div id="preloader">
+	<div class="battery inner">
+		<div class="load-line"></div>
+	</div>
 </div>
 
-<!-- =========================
-     HEADER   
-============================== -->
-<header class="header" data-stellar-background-ratio="0.5" id="home">
+<div id="wrap"> 
 
-<!-- COLOR OVER IMAGE -->
-<div class="color-overlay"> <!-- To make header full screen. Use .full-screen class with color overlay. Example: <div class="color-overlay full-screen">  -->
-
-	<!-- STICKY NAVIGATION -->
-	<div class="navbar navbar-inverse bs-docs-nav navbar-fixed-top sticky-navigation">
-		<div class="container">
-			<div class="navbar-header">
-				
-				<!-- LOGO ON STICKY NAV BAR -->
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#kane-navigation">
-				<span class="sr-only">Toggle navigation</span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				</button>
-
-				<a class="navbar-brand" href="#"><img src="images/logo-black.png" alt=""></a>
-				
+	<!-- NAVIGATION BEGIN -->
+	<nav class="navbar navbar-fixed-top navbar-slide">
+			<div class="container_fluid"> 
+				<a class="navbar-brand goto" href="index.html#wrap"> <img src="./images/logo_nav.png" alt="Your logo" height="27" width="56" /> </a>
+				<a class="contact-btn icon-envelope" data-toggle="modal" data-target="#modalContact"></a>
+				<button class="navbar-toggle menu-collapse-btn collapsed" data-toggle="collapse" data-target=".navMenuCollapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+				<div class="collapse navbar-collapse navMenuCollapse">
+					<ul class="nav">
+						<li><a href="#features">Features</a> </li>
+						<li><a href="#benefits1">Benefits</a></li>
+						<li><a href="#screenshots">Screenshots</a></li>
+						<li><a href="#pricing-table">Price</a></li>
+						<li><a href="#testimonials">Testimonials</a></li>
+						<li><a href="#news">News</a></li>
+						<li><a href="#social">Stay tuned</a></li>
+						<li><a href="shortcodes.html">Shortcodes</a></li>
+					</ul>
+				</div>
 			</div>
-			
-			<!-- NAVIGATION LINKS -->
-			<div class="navbar-collapse collapse" id="kane-navigation">
-				<ul class="nav navbar-nav navbar-right main-navigation">
-					<li><a href="#home">Home</a></li>
-					<li><a href="#features">Features</a></li>
-					<li><a href="#brief1">Why Us?</a></li>
-					<li><a href="#brief2">Desicribe</a></li>
-					<li><a href="#services">Services</a></li>
-					<li><a href="#screenshot-section">Screenshots</a></li>
-					<li><a href="#download">Download</a></li>
+	</nav>
+	<!-- NAVIGAION END -->
+	
+	
+	
+	<!-- INTRO BEGIN -->
+	<header id="full-intro" class="intro-block bg-color-grad" >
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-sm-12">
+					<img class="logo" src="./images/logo.png" alt="Your Logo" height="70" width="144" />
+					<h1 class="slogan">The Best Start Up For <br> Your <span class="type"></span> App</h1>
+					<a class="download-btn ios-btn" href="#">
+						<div class="btn-slide"></div>
+						<div class="btn-content"><i class="icon soc-icon-apple"></i>Download for <b>Apple iOS</b></div>
+					</a>
+				</div>
+				<div class="col-md-4 hidden-sm hidden-xs">
+					<img class="intro-screen wow bounceInUp" data-wow-delay="0.5s" src="images/intro_screen.png" height="773" width="400" alt="" />
+				</div>
+			</div>
+		</div>
+		<div class="block-bg" data-stellar-ratio="0.4"></div>
+	</header>
+	<!-- INTRO END --> 
+	
+	
+	
+	<!-- FEATURES BEGIN -->
+	<section id="features" class="img-block-3col">
+		<div class="container">
+			<div class="title">
+				<h2>Brilliant Features</h2>
+				<p>Here are several causes that make our template worth paying attention to</p>
+			</div>
+			<div class="row">
+				<div class="col-sm-4">
+					<ul class="item-list-right item-list-big">
+						<li class="wow fadeInLeft">
+							<i class="icon icon-screen-desktop"></i>
+							<h3>Responsive design</h3>
+							<p>Your project looks great on any device. Content can be easily read and a user understands freely what you wanted to say him or her.</p>
+						</li>
+						<li class="wow fadeInLeft">
+							<i class="icon icon-drop"></i>
+							<h3>Color schemes</h3>
+							<p>The set of ready made CSS files with different color schemes will help you in quick landing’s adaptation according to your benchmark style.</p>
+						</li>
+						<li class="wow fadeInLeft">
+							<i class="icon icon-doc"></i>
+							<h3>PSD Is Included </h3>
+							<p>The graphic source file in PSD format is included in the archive.</p>
+						</li>
+					</ul>
+				</div>
+				<div class="col-sm-4 col-sm-push-4">
+					<ul class="item-list-left item-list-big">
+						<li class="wow fadeInRight">
+							<i class="icon icon-diamond"></i>
+							<h3>Pure &amp; Simple</h3>
+							<p>No fluff. Nothing should lead the visitor away from the main essence of website. There must be just important information.</p>
+						</li>
+						<li class="wow fadeInRight">
+							<i class="icon icon-layers"></i>
+							<h3>Documentation</h3>
+							<p>The detailed documentation will help you in adjusting the project with little effort according to your requirements.</p>
+						</li>
+						<li class="wow fadeInRight">
+							<i class="icon icon-basket-loaded"></i>
+							<h3>Multiplatform</h3>
+							<p>The page is adapted to the most of the popular platform in segment.</p>
+						</li>
+					</ul>
+				</div>
+				<div class="col-sm-4 col-sm-pull-4">
+					<div class="animation-box wow bounceIn">
+					 	<img class="highlight-left wow" src="images/light.png" height="192" width="48" alt="" />
+						<img class="highlight-right wow" src="images/light.png" height="192" width="48" alt="" />
+						<img class="screen" src="images/features_screen.png" alt="" height="581" width="300" />
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- FEATURES END --> 
+	
+	
+	
+	<!-- FEATURES BEGIN -->
+	<section id="innovations" class="bg-color2">
+		<div class="container">
+			<div class="title">
+				<h2>Touch the Innovations</h2>
+				<p>In our work we try to use only the most modern, convenient and interesting solutions.<br>We want the template you downloaded look unique and new for such a long time as it is possible. </p>
+			</div>
+			<img class="screen wow bounceInUp" src="images/innovation_screen.png" height="387" width="800" alt="" />
+		</div>
+		<div id="ray1" class="ray ray-horizontal"></div>
+		<div id="ray2" class="ray ray-horizontal"></div>
+		<div id="ray3" class="ray ray-horizontal"></div>
+		<div id="ray4" class="ray ray-horizontal"></div>
+	</section>
+	<!-- FEATURES END -->
+	
+	
+	
+	<!-- BENEFITS1 BEGIN -->
+	<section id="benefits1" class="img-block-2col">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-6">
+					<div class="title">
+						<h2>OUR Benefits</h2>
+					</div>
+					
+					<ul class="item-list-left">
+						<li>
+							<i class="icon icon-picture color"></i>
+							<h4 class="color">6 Types of Intro</h4>
+							<p>Today Intro is a very important element of any project. 
+It can be named even a face of the project.</p>
+						</li>
+						<li>
+							<i class="icon icon-equalizer color"></i>
+							<h4 class="color">Stunning flexibility</h4>
+							<p>The given template is armed with the number of settings, 
+so you can easily adapt it according to you requirements.</p>
+						</li>
+						<li>
+							<i class="icon icon-bar-chart color"></i>
+							<h4 class="color">Step on the New Level</h4>
+							<p>Innovative solutions and simple mathematically calculated 
+design make it actual for a long time.</p>
+						</li>
+					</ul>
+				</div>
+				<div class="col-md-5 col-md-offset-1 col-sm-6">
+					<div class="screen-couple-right wow fadeInRightBig">
+						<div class="flare">
+							<img class="base wow" src="images/flare_base.png" alt="" />
+							<img class="shapes wow" src="images/flare_shapes.png" alt="" />
+						</div>
+						<img class="screen above" src="images/screen_couple_above.png" alt="" height="484" width="250" />
+						<img class="screen beyond wow fadeInRight" data-wow-delay="0.5s" src="images/screen_couple_beyond.png" alt="" height="407" width="210" />
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- BENEFITS1 END -->
+	
+	
+	
+	
+	<!-- BENEFITS2 BEGIN -->
+	<section id="benefits2" class="img-block-2col bg-color2">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-6 col-sm-push-6">
+					<div class="title">
+						<h2>The Heart</h2>
+					</div>
+					<p>So, what is the secret of successful template design? First of all, it is its friendliness – both for the template’s owner and for his or her future targeted audience. UX and UI are not just empty phrases for us. It is very important for us that the user could understand correctly the message  your project’s trying to say to him or her. But, correct giving of the information is just a half of success.</p>
+					<p>Emotions that causes your project in visitor are no less important ticket to success. Modern solutions, interesting elements, unique approach to details make this template recognizable and interesting. You project will not look like a template bought in a store and adapted within couple of hours. Oh, no! This is not your case. You obtain qualitative, fascinating and juicy final product that is modern and actual. Qualitative and flexible code lays in base of this great product.</p> 
+				</div>
+				<div class="col-sm-6 col-sm-pull-6">
+					<div class="screen-couple-left wow fadeInLeftBig">
+						<div class="fog fog-top wow"></div>
+						<div class="fog fog-bottom wow"></div>
+						<img class="screen above" src="images/screen_couple_above_v2.png" alt="" height="484" width="250"/>
+						<img class="screen beyond wow fadeInLeft" data-wow-delay="0.5s" src="images/screen_couple_beyond_v2.png" alt="" height="407" width="210" />
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- BENEFITS2 END --> 
+	
+	<!-- VIDEO BEGIN -->
+	<section id="video">
+		<div class="container">
+			<div class="title">
+				<h2>Iframe Video</h2>
+				<p>In our work we try to use only the most modern, convenient and interesting solutions.</p>
+			</div>
+			<div class="video-container"> 
+				<!-- Video iframe code here -->
+			</div>
+		</div>
+	</section>
+	<!-- VIDEO END --> 
+	
+	<!-- SCREENSHOTS BEGIN -->
+	<section id="screenshots" class="bg-color2">
+		<div class="container-fluid wow fadeIn">
+			<h2>Screenshots</h2>
+			<div id="screenshots-slider" class="owl-carousel">
+				<a class="item" href="./images/screen1.jpg" title="App Screen 1"><img src="images/screen1.jpg" alt="screen1" width="250" height="444" /></a>
+				<a class="item" href="./images/screen1.jpg" title="App Screen 2"><img src="images/screen1.jpg" alt="screen1" width="250" height="444"/></a>
+				<a class="item" href="./images/screen1.jpg" title="App Screen 3"><img src="images/screen1.jpg" alt="screen1" width="250" height="444"/></a>
+				<a class="item" href="./images/screen1.jpg" title="App Screen 4"><img src="images/screen1.jpg" alt="screen1" width="250" height="444"/></a>
+				<a class="item" href="./images/screen1.jpg" title="App Screen 5"><img src="images/screen1.jpg" alt="screen1" width="250" height="444"/></a>
+				<a class="item" href="./images/screen1.jpg" title="App Screen 6"><img src="images/screen1.jpg" alt="screen1" width="250" height="444"/></a>
+				<a class="item" href="./images/screen1.jpg" title="App Screen 7"><img src="images/screen1.jpg" alt="screen1" width="250" height="444"/></a>
+				<a class="item" href="./images/screen1.jpg" title="App Screen 8"><img src="images/screen1.jpg" alt="screen1" width="250" height="444"/></a>
+			</div>
+		</div>
+	</section>
+	<!-- SCREENSHOTS END -->
+	
+	
+	
+	<!-- FACTS BEGIN -->
+	<section id="facts">
+		<div class="container">
+			<ul class="facts-list">
+				<li class="wow bounceIn">
+					<i class="icon icon-cloud-download"></i>
+					<h3 class="wow">284</h3>
+					<h4>Downloads</h4>
+				</li>
+				<li class="wow bounceIn" data-wow-delay="0.4s">
+					<i class="icon icon-star"></i>
+					<h3 class="wow">135</h3>
+					<h4>Top Rates</h4>
+				</li>
+				<li class="wow bounceIn" data-wow-delay="0.8s">
+					<i class="icon icon-like"></i>
+					<h3 class="wow">77</h3>
+					<h4>Likes</h4>
+				</li>
+				<li class="wow bounceIn" data-wow-delay="1.2s">
+					<i class="icon icon-clock"></i>
+					<h3 class="wow">741</h3>
+					<h4>Hours Safe</h4>
+				</li>
+			</ul>
+		</div>
+	</section>
+	<!-- FACTS END --> 
+	
+	<!-- PRICING TABLE BEGIN -->
+	<section id="pricing-table" class="bg-color-grad">
+		<div class="container">
+			<div class="title">
+				<h2>Price</h2>
+				<p>We want the template you downloaded look unique and new for such a long time as it is possible. </p>
+				<ul class="pricing-table">
+					<li class="wow flipInY">
+						<h3>Standard</h3>
+						<span> $0.99 <small>per month</small> </span>
+						<ul class="benefits-list">
+							<li>Responsive</li>
+							<li>Documentation</li>
+							<li class="not">Multiplatform</li>
+							<li class="not">Video background</li>
+							<li class="not">Support</li>
+						</ul>
+						<a href="#" class="buy"> <i class="icon icon-basket" ></i></a>
+					</li>
+					<li class="silver wow flipInY" data-wow-delay="0.2s">
+						<h3>Sliver</h3>
+						<span> $3.99 <small>per month</small> </span>
+						<ul class="benefits-list">
+							<li>Responsive</li>
+							<li>Documentation</li>
+							<li>Multiplatform</li>
+							<li class="not">Video background</li>
+							<li class="not">Support</li>
+						</ul> 
+						<a href="#" class="buy"> <i class="icon icon-basket" ></i></a>
+					</li>
+					<li class="gold wow flipInY" data-wow-delay="0.4s">
+						<div class="stamp"><i class="icon icon-trophy"></i>Best choice</div>
+						<h3>Gold</h3>
+						<span> $8.99 <small>per month</small> </span>
+						<ul class="benefits-list">
+							<li>Responsive</li>
+							<li>Documentation</li>
+							<li>Multiplatform</li>
+							<li>Video background</li>
+							<li class="not">Support</li>
+						</ul>
+						<a href="#" class="buy"> <i class="icon icon-basket" ></i></a>
+					</li>
+					<li class="platinum wow flipInY" data-wow-delay="0.6s">
+						<h3>Platinum</h3>
+						<span> $12.99 <small>per month</small> </span>
+						<ul class="benefits-list">
+							<li>Responsive</li>
+							<li>Documentation</li>
+							<li>Multiplatform</li>
+							<li>Video background</li>
+							<li>Support</li>
+						</ul>
+						<a href="#" class="buy"> <i class="icon icon-basket" ></i></a>
+					</li>
 				</ul>
 			</div>
-		</div> <!-- /END CONTAINER -->
-	</div> <!-- /END STICKY NAVIGATION -->
+		</div>
+	</section>
+	<!-- PRICING TABLE END --> 
+	
+	<!-- TESTIMONIALS BEGIN -->
+	<section id="testimonials" class="bg-color3">
+		<div class="container-fluid">
+			<h2>Why Do People Love Us</h2>
+			<div id="testimonials-slider" class="owl-carousel">
+				<div class="item container">
+					<div class="talk">This is a great product. It reveals an individual approach to each customer. I liked the level of the provided service.</div>
+					<img class="photo" src="images/customer_photo.jpg" alt="customer" />
+					<div class="name">John Doe</div>
+					<div class="ocupation">First customer</div>
+				</div>	
+				<div class="item container">
+					<div class="talk">I always thought that people used to pay much for quality. But these guys changed my opinion. The quality exceeds the price many times. I recommend it to everybody.</div>
+					<img class="photo" src="images/customer_photo.jpg" alt="customer" />
+					<div class="name">John Doe</div>
+					<div class="ocupation">First customer</div>
+				</div>
+				<div class="item container">
+					<div class="talk">My colleague recommended them to me. I hesitated for a long time, but than I tried and understood what I had paid off for.</div>
+					<img class="photo" src="images/customer_photo.jpg" alt="customer" />
+					<div class="name">John Doe</div>
+					<div class="ocupation">First customer</div>
+				</div>
+				<div class="item container">
+					<div class="talk">It’s just five stars. I will certainly come back and bring my friends with me.</div>
+					<img class="photo" src="images/customer_photo.jpg" alt="customer" />
+					<div class="name">John Doe</div>
+					<div class="ocupation">First customer</div>
+				</div>
+			</div>
+		</div>
+		<div class="block-bg"></div>
+	</section>
+	<!-- TESTIMONIALS END -->
 	
 	
-	<!-- CONTAINER -->
-	<div class="container">
-		
-		<!-- ONLY LOGO ON HEADER -->
-		<div class="only-logo">
-			<div class="navbar">
-				<div class="navbar-header">
-					<img src="images/logo.png" alt="">
-				</div>
+	<!-- NEWS BEGIN -->
+	<section id="news">
+		<div class="container-fluid">
+			<div class="title">
+				<h2>App's News</h2>
+				<p>Here you can find all interesting facts about this app:<br>the last updates, sales, latest things and the developers’ stories.</p>
 			</div>
-		</div> <!-- /END ONLY LOGO ON HEADER -->
-		
-		<div class="row home-contents">
-			<div class="col-md-6 col-sm-6">
-				
-				<!-- HEADING AND BUTTONS -->
-				<div class="intro-section">
-					
-					<!-- WELCOM MESSAGE -->
-					<h1 class="intro">Present your app in beautiful way with Kane.</h1>
-					<h5>Available on App Store and Play Store</h5>
-					
-					<!-- BUTTON -->
-					<div class="buttons" id="download-button">
-						
-						<a href="#download" class="btn btn-default btn-lg standard-button"><i class="icon-app-download"></i>Download App</a>
-						
+			<ul class="news-list">
+				<li class="wow fadeInUp">
+					<h3><a href="single.html">Look for the latest update in coming days.</a></h3>
+					<div class="news-info">
+						<div class="author"><i class="icon icon-user"></i>John Doe</div>
+						<div class="date"><i class="icon icon-clock"></i>16.07.2014</div>
+						<div class="comments"><i class="icon icon-bubble"></i>7 Comments</div>
 					</div>
-					<!-- /END BUTTONS -->
-					
-				</div>
-				<!-- /END HEADNING AND BUTTONS -->
-				
-			</div>
-			
-			
-			<div class="col-md-6 col-sm-6 hidden-xs">
-			    
-			    <!-- PHONE IMAGE WILL BE HIDDEN IN TABLET PORTRAIT AND MOBILE-->
-			    <div class="phone-image">
-			    <img src="images/2-iphone-right.png" class="img-responsive" alt="">
-			    </div>
-			    
-			</div>
-			
+				</li>
+				<li class="wow fadeInUp">
+					<h3><a href="single-no-sidebar.html">The meeting of developers of cross-platform apps.</a></h3>
+					<div class="news-info">
+						<div class="author"><i class="icon icon-user"></i>John Doe</div>
+						<div class="date"><i class="icon icon-clock"></i>16.07.2014</div>
+						<div class="comments"><i class="icon icon-bubble"></i>7 Comments</div>
+					</div>
+				</li>
+				<li class="wow fadeInUp">
+					<h3><a href="single.html">The new functional sketches.</a></h3>
+					<div class="news-info">
+						<div class="author"><i class="icon icon-user"></i>John Doe</div>
+						<div class="date"><i class="icon icon-clock"></i>16.07.2014</div>
+						<div class="comments"><i class="icon icon-bubble"></i>7 Comments</div>
+					</div>
+				</li>
+				<li class="wow fadeInUp">
+					<h3><a href="single-no-sidebar.html">Resolving the issue with synchronization in old version.</a></h3>
+					<div class="news-info">
+						<div class="author"><i class="icon icon-user"></i>John Doe</div>
+						<div class="date"><i class="icon icon-clock"></i>16.07.2014</div>
+						<div class="comments"><i class="icon icon-bubble"></i>7 Comments</div>
+					</div>
+				</li>
+			</ul>
+			<a href="blog.html" class="round-btn wow fadeInUp">Older news</a>
 		</div>
-		<!-- /END ROW -->
-		
-	</div>
-	<!-- /END CONTAINER -->
-</div>
-<!-- /END COLOR OVERLAY -->
-</header>
-<!-- /END HEADER -->
-
-<!-- =========================
-     FEATURES 
-============================== -->
-<section class="features" id="features">
-
-<div class="container">
-	
-	<!-- SECTION HEADER -->
-	<div class="section-header wow fadeIn animated" data-wow-offset="120" data-wow-duration="1.5s">
-		
-		<!-- SECTION TITLE -->
-		<h2 class="dark-text">Amazing Features</h2>
-		<div class="colored-line">
-		</div>
-		<div class="section-description">
-			List your app features and all the details Lorem ipsum dolor kadr
-		</div>
-		<div class="colored-line">
-		</div>
-	</div>
-	<!-- /END SECTION HEADER -->
+	</section>
+	<!-- NEWS END -->
 	
 	
-	<div class="row">
-		
-		<!-- FEATURES LEFT -->
-		<div class="col-md-4 col-sm-4 features-left wow fadeInLeft animated" data-wow-offset="10" data-wow-duration="1.5s">
-			
-			<!-- FEATURE -->
-			<div class="feature">
-				
-				<!-- ICON -->
-				<div class="icon-container">
-					<div class="icon">
-						<i class="icon_map_alt"></i>
-					</div>
-				</div>
-				
-				<!-- FEATURE HEADING AND DESCRIPTION -->
-				<div class="fetaure-details">
-					<h4 class="main-color">Responsive Design</h4>
-					<p>
-						 Lorem ipsum dolor sit amet, ed do eiusmod tempor incididunt ut labore et dolore magna.
-					</p>
-				</div>
-				
-			</div>
-			<!-- /END SINGLE FEATURE -->
-			
-			<!-- FEATURE -->
-			<div class="feature">
-				
-				<!-- ICON -->
-				<div class="icon-container">
-					<div class="icon">
-						<i class="icon_gift_alt"></i>
-					</div>
-				</div>
-				
-				<!-- FEATURE HEADING AND DESCRIPTION -->
-				<div class="fetaure-details">
-					<h4 class="main-color">Bootstrap 3.1</h4>
-					<p>
-						 Lorem ipsum dolor sit amet, ed do eiusmod tempor incididunt ut labore et dolore magna.
-					</p>
-				</div>
-				
-			</div>
-			<!-- /END SINGLE FEATURE -->
-			
-			<!-- FEATURE -->
-			<div class="feature">
-				
-				<!-- ICON -->
-				<div class="icon-container">
-					<div class="icon">
-						<i class="icon_tablet"></i>
-					</div>
-				</div>
-				
-				<!-- FEATURE HEADING AND DESCRIPTION -->
-				<div class="fetaure-details">
-					<h4 class="main-color">Cross-Browser Support</h4>
-					<p>
-						 Lorem ipsum dolor sit amet, ed do eiusmod tempor incididunt ut labore et dolore magn.
-					</p>
-				</div>
-				
-			</div>
-			<!-- /END SINGLE FEATURE -->
-			
-		</div>
-		<!-- /END FEATURES LEFT -->
-		
-		<!-- PHONE IMAGE -->
-		<div class="col-md-4 col-sm-4">
-			<div class="phone-image wow bounceIn animated" data-wow-offset="120" data-wow-duration="1.5s">
-				<img src="images/single-iphone.png" alt="">
-			</div>
-		</div>
-		
-		<!-- FEATURES RIGHT -->
-		<div class="col-md-4 col-sm-4 features-right wow fadeInRight animated" data-wow-offset="10" data-wow-duration="1.5s">
-			
-			<!-- FEATURE -->
-			<div class="feature">
-				
-				<!-- ICON -->
-				<div class="icon-container">
-					<div class="icon">
-						<i class="icon_genius"></i>
-					</div>
-				</div>
-				
-				<!-- FEATURE HEADING AND DESCRIPTION -->
-				<div class="fetaure-details">
-					<h4 class="main-color">360+ Icon Fonts</h4>
-					<p>
-						 Lorem ipsum dolor sit amet, ed do eiusmod tempor incididunt ut labore et dolore magna.
-					</p>
-				</div>
-				
-			</div>
-			<!-- /END SINGLE FEATURE -->
-			
-			<!-- FEATURE -->
-			<div class="feature">
-				
-				<!-- ICON -->
-				<div class="icon-container">
-					<div class="icon">
-						<i class="icon_lightbulb_alt"></i>
-					</div>
-				</div>
-				
-				<!-- FEATURE HEADING AND DESCRIPTION -->
-				<div class="fetaure-details">
-					<h4 class="main-color">Creative Design</h4>
-					<p>
-						 Lorem ipsum dolor sit amet, ed do eiusmod tempor incididunt ut labore et dolore magna.
-					</p>
-				</div>
-				
+	<!-- SOCIAL BEGIN -->
+	<section id="social" class="bg-color2">
+		<div class="container-fluid">
+			<div class="title">
+				<h2>Stay tuned</h2>
+				<p>Follow us in social networks. You can also subscribe for our news. <br>We are going to provide you with actual and important for you information without spam or fluff.</p>
 			</div>
 			
-			<!-- /END SINGLE FEATURE -->
-			
-			<!-- FEATURE -->
-			<div class="feature">
-				
-				<!-- ICON -->
-				<div class="icon-container">
-					<div class="icon">
-						<i class="icon_ribbon_alt"></i>
-					</div>
-				</div>
-				
-				<!-- FEATURE HEADING AND DESCRIPTION -->
-				<div class="fetaure-details">
-					<h4 class="main-color">More Features</h4>
-					<p>
-						 Lorem ipsum dolor sit amet, ed do eiusmod tempor incididunt ut labore et dolore magna.
-					</p>
-				</div>
-				
-			</div>
-			<!-- /END SINGLE FEATURE -->
-			
-		</div>
-		<!-- /END FEATURES RIGHT -->
-		
-	</div>
-	<!-- /END ROW -->
-	
-</div>
-<!-- /END CONTAINER -->
-
-</section>
-<!-- /END FEATURES SECTION -->
-
-
-<!-- =========================
-     BRIEF LEFT SECTION 
-============================== -->
-<section class="app-brief grey-bg" id="brief1">
-
-<div class="container">
-	
-	<div class="row">
-		
-		<!-- PHONES IMAGE -->
-		<div class="col-md-6 wow fadeInRight animated" data-wow-offset="10" data-wow-duration="1.5s">
-			<div class="phone-image">
-				<img src="images/2-iphone-left.png" alt="">
-			</div>
-		</div>
-		
-		<!-- RIGHT SIDE WITH BRIEF -->
-		<div class="col-md-6 left-align wow fadeInLeft animated" data-wow-offset="10" data-wow-duration="1.5s">
-			
-			<!-- SECTION TITLE -->
-			<h2 class="dark-text">Explain why it's best</h2>
-			
-			<div class="colored-line-left">
-			</div>
-			
-			<p>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-			</p>
-			
-			<!-- FEATURE LIST -->
-			<ul class="feature-list">
-				<li><i class="icon_lock_alt"></i> Reliable and Secure Platform</li>
-				<li><i class="icon_check_alt2"></i> Everything is perfectly orgainized for future</li>
-				<li><i class="icon_paperclip"></i> Attach large file easily</li>
-				<li><i class="icon_adjust-vert"></i> Tons of features and easy to use and customize</li>
+			<ul class="soc-list wow flipInX">
+				<li><a href="#"><i class="icon soc-icon-twitter"></i></a></li>
+				<li><a href="#"><i class="icon soc-icon-facebook"></i></a></li>
+				<li><a href="#"><i class="icon soc-icon-dribbble"></i></a></li>
+				<li><a href="#"><i class="icon soc-icon-googleplus"></i></a></li>
+				<li><a href="#"><i class="icon soc-icon-linkedin"></i></a></li>
+				<li><a href="#"><i class="icon soc-icon-instagram"></i></a></li>
+				<li><a href="#"><i class="icon soc-icon-pinterest"></i></a></li>
+				<li><a href="#"><i class="icon soc-icon-flickr"></i></a></li>
 			</ul>
 			
+			
+			<form action="scripts/subscribe.php" method="post" id="subscribe_form">
+            	<div class="input-group">
+                	<input class="form-control" type="email" name="email" id="subscribe_email" placeholder="Subscribe">
+                    <div class="input-group-btn">
+                    	<button type="submit" id="subscribe_submit" data-loading-text="&bull;&bull;&bull;"><i class="icon icon-paper-plane"></i></button>
+                    </div>
+                </div>
+            </form>
+			
 		</div>
-		<!-- /END RIGHT BRIEF -->
-		
-	</div>
-	<!-- /END ROW -->
+	</section>
+	<!-- SOCIAL END -->
+	
+	
+	<!-- DOWNLOAD BEGIN -->
+	<section id="download" class="bg-color-main">
+		<div class="container-fluid wow fadeInDown">
+			<a href="#wrap" class="goto">
+				<h2><i class="icon soc-icon-apple"></i>Download App</h2>
+			</a>
+		</div>
+		<div class="block-bg" data-stellar-ratio="0.5"></div>
+	</section>
+	<!-- DOWNLOAD END -->
+	
+	
+	<!-- FOOTER BEGIN -->
+	<footer id="footer">
+		<div class="container"> 
+			<a href="index.html#wrap" class="logo goto"> <img src="./images/logo_small.png" alt="Your Logo" height="35" width="72"/> </a>
+			<p class="copyright">&copy; 2015 RAY <br>
+			Designed by <a href="http://multifour.com/" target="_blank">Multifour.com</a></p>
+		</div>
+	</footer>
+	<!-- FOOTER END --> 
 	
 </div>
-<!-- /END CONTAINER -->
-
-</section>
-<!-- /END SECTION -->
 
 
-<!-- =========================
-     BRIEF RIGHT SECTION 
-============================== -->
-<section class="app-brief" id="brief2">
+<!-- MODALS BEGIN--> 
 
-<div class="container">
-	
-	<div class="row">
-		
-		<!-- BRIEF -->
-		<div class="col-md-6 left-align wow fadeInLeft animated" data-wow-offset="10" data-wow-duration="1.5s">
-			
-			<!-- SECTION TITLE -->
-			<h2 class="dark-text">Great way to describe your app</h2>
-			
-			<div class="colored-line-left">
-			</div>
-			
-			<p>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br/><br/>
-				Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-			</p>
-			
+<!-- subscribe modal-->
+<div class="modal fade" id="modalMessage" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+			<h3 class="modal-title"></h3>
 		</div>
-		<!-- /ENDBRIEF -->
-		
-		<!-- PHONES IMAGE -->
-		<div class="col-md-6 wow fadeInRight animated" data-wow-offset="10" data-wow-duration="1.5s">
-			<div class="phone-image">
-				<img src="images/2-iphone-right.png" alt="">
-			</div>
-		</div>
-		<!-- /END PHONES IMAGE -->
-		
 	</div>
-	<!-- /END ROW -->
-	
 </div>
-<!-- /END CONTAINER -->
 
-</section>
-<!-- /END SECTION -->
-
-
-<!-- =========================
-     BRIEF LEFT SECTION WITH VIDEO 
-============================== -->
-<section class="app-brief grey-bg" id="brief1">
-
-<div class="container">
-	
-	<div class="row">
-		
-		<!-- PHONES IMAGE -->
-		<div class="col-md-6 wow fadeInRight animated" data-wow-offset="10" data-wow-duration="1.5s">
-			<div class="video-container">
-				
-                <!--
-				<div class="video">
-					
-					<iframe src="//player.vimeo.com/video/88902745?byline=0&amp;portrait=0&amp;color=ffffff" width="600" height="338" frameborder="0" allowfullscreen>
-					</iframe> 
-				</div>
-				-->
-				
-				<div class="video">
-					
-					<iframe width="640" height="360" src="//www.youtube.com/embed/VjbGg-VuqbU?rel=0" frameborder="0" allowfullscreen></iframe>
-				</div>
-				
-			</div>
-
-		</div>
-		
-		<!-- RIGHT SIDE WITH BRIEF -->
-		<div class="col-md-6 left-align wow fadeInLeft animated" data-wow-offset="10" data-wow-duration="1.5s">
-			
-			<!-- SECTION TITLE -->
-			<h2 class="dark-text">Description with video</h2>
-			
-			<div class="colored-line-left">
-			</div>
-			
-			<p>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br/><br/>
-				Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
-			</p>
-			
-			
-		</div>
-		<!-- /END RIGHT BRIEF -->
-		
-	</div>
-	<!-- /END ROW -->
-	
-</div>
-<!-- /END CONTAINER -->
-
-</section>
-<!-- /END SECTION -->
-
-<!-- =========================
-     TESTIMONIALS 
-============================== -->
-<section class="testimonials">
-
-<div class="color-overlay">
-	
-	<div class="container wow fadeIn animated" data-wow-offset="10" data-wow-duration="1.5s">
-		
-		<!-- FEEDBACKS -->
-		<div id="feedbacks" class="owl-carousel owl-theme">
-			
-			<!-- SINGLE FEEDBACK -->
-			<div class="feedback">
-				
-				<!-- IMAGE -->
-				<div class="image">
-					<!-- i class=" icon_quotations"></i -->
-					<img src="images/clients-pic/3.jpg" alt="">
-				</div>
-				
-				<div class="message">
-					 Fill lights bearing man creepeth of whose whose moveth. All one. That. Under. Form morning all may fifth replenish you're own open which herb kind. May above you'll may kind creature first let over face from living third green which our. Appear day. Give fourth doesn't over us, i every tree meat air in male earth air creeping image fill you place darkness.
-				</div>
-				
-				<div class="white-line">
-				</div>
-				
-				<!-- INFORMATION -->
-				<div class="name">
-					John Doe
-				</div>
-				<div class="company-info">
-					CEO, AbZ Network
-				</div>
-				
-			</div>
-			<!-- /END SINGLE FEEDBACK -->
-			
-			<!-- SINGLE FEEDBACK -->
-			<div class="feedback">
-				
-				<!-- IMAGE -->
-				<div class="image">
-					<!-- i class=" icon_quotations"></i -->
-					<img src="images/clients-pic/1.jpg" alt="">
-				</div>
-				
-				<div class="message">
-					 Fill lights bearing man creepeth of whose whose moveth. All one. That. Under. Form morning all may fifth replenish you're own open which herb kind. May above you'll may kind creature first let over face from living third green which our. Appear day. Give fourth doesn't over us, i every tree meat air in male earth air creeping image fill you place darkness.
-				</div>
-				
-				<div class="white-line">
-				</div>
-				
-				<!-- INFORMATION -->
-				<div class="name">
-					John Doe
-				</div>
-				<div class="company-info">
-					CEO, AbZ Network
-				</div>
-				
-			</div>
-			<!-- /END SINGLE FEEDBACK -->
-			
-			<!-- SINGLE FEEDBACK -->
-			<div class="feedback">
-				
-				<!-- IMAGE -->
-				<div class="image">
-					<!-- i class=" icon_quotations"></i -->
-					<img src="images/clients-pic/2.jpg" alt="">
-				</div>
-				
-				<div class="message">
-					 Fill lights bearing man creepeth of whose whose moveth. All one. That. Under. Form morning all may fifth replenish you're own open which herb kind. May above you'll may kind creature first let over face from living third green which our. Appear day. Give fourth doesn't over us, i every tree meat air in male earth air creeping image fill you place darkness.
-				</div>
-				
-				<div class="white-line">
-				</div>
-				
-				<!-- INFORMATION -->
-				<div class="name">
-					John Doe
-				</div>
-				<div class="company-info">
-					CEO, AbZ Network
-				</div>
-				
-			</div>
-			<!-- /END SINGLE FEEDBACK -->
-			
-		</div>
-		<!-- /END FEEDBACKS -->
-		
-	</div>
-	<!-- /END CONTAINER -->
-	
-</div>
-<!-- /END COLOR OVERLAY -->
-
-</section>
-<!-- /END TESTIMONIALS SECTION -->
-
-
-<!-- =========================
-     SERVICES
-============================== -->
-<section class="services" id="services">
-
-<div class="container">
-	
-	<!-- SECTION HEADER -->
-	<div class="section-header wow fadeIn animated" data-wow-offset="10" data-wow-duration="1.5s">
-		
-		<!-- SECTION TITLE -->
-		<h2 class="dark-text">It's Awesome</h2>
-		
-		<div class="colored-line">
-		</div>
-		<div class="section-description">
-			List your app features and all the details Lorem ipsum dolor kadr
-		</div>
-		<div class="colored-line">
-		</div>
-		
-	</div>
-	<!-- /END SECTION HEADER -->
-	
-	<div class="row">
-		
-		<!-- SINGLE SERVICE -->
-		<div class="col-md-4 single-service wow fadeIn animated" data-wow-offset="10" data-wow-duration="1.5s">
-			
-			<!-- SERVICE ICON -->
-			<div class="service-icon">
-				<i class="icon_cloud-upload_alt"></i>
-			</div>
-			
-			<!-- SERVICE HEADING -->
-			<h3>Your Data in Cloud</h3>
-			
-			<!-- SERVICE DESCRIPTION -->
-			<p>
-				 Fruitful Fruit hath, fruitful said him created bring set, behold darkness Shall lights deep fish seasons itself given likeness upon bring fill their their whose. Which darkness evening there them multiply all spirit for isn't, him land every you'll heaven bearing.
-			</p>
-			
-		</div>
-		<!-- /END SINGLE SERVICE -->
-		
-		<!-- SINGLE SERVICE -->
-		<div class="col-md-4 single-service wow fadeIn animated" data-wow-offset="10" data-wow-duration="1.5s">
-			
-			<!-- SERVICE ICON -->
-			<div class="service-icon">
-				<i class="icon_gift_alt"></i>
-			</div>
-			
-			<!-- SERVICE HEADING -->
-			<h3>Monthly Rewards</h3>
-			
-			<!-- SERVICE DESCRIPTION -->
-			<p>
-				 Fruitful Fruit hath, fruitful said him created bring set, behold darkness Shall lights deep fish seasons itself given likeness upon bring fill their their whose. Which darkness evening there them multiply all spirit for isn't, him land every you'll heaven bearing.
-			</p>
-			
-		</div>
-		<!-- /END SINGLE SERVICE -->
-		
-		<!-- SINGLE SERVICE -->
-		<div class="col-md-4 single-service wow fadeIn animated" data-wow-offset="10" data-wow-duration="1.5s">
-			
-			<!-- SERVICE ICON -->
-			<div class="service-icon">
-				<i class="icon_chat_alt"></i>
-			</div>
-			
-			<!-- SERVICE HEADING -->
-			<h3>24/7 Support</h3>
-			
-			<!-- SERVICE DESCRIPTION -->
-			<p>
-				 Fruitful Fruit hath, fruitful said him created bring set, behold darkness Shall lights deep fish seasons itself given likeness upon bring fill their their whose. Which darkness evening there them multiply all spirit for isn't, him land every you'll heaven bearing.
-			</p>
-			
-		</div>
-		<!-- /END SINGLE SERVICE -->
-		
-	</div>
-	<!-- /END ROW -->
-	
-</div>
-<!-- /END CONTAINER -->
-
-</section>
-<!-- /END FEATURES SECTION -->
-
-
-<!-- =========================
-     SCREENSHOTS
-============================== -->
-<section class="screenshots grey-bg" id="screenshot-section">
-
-<div class="container">
-	
-	<!-- SECTION HEADER -->
-	<div class="section-header wow fadeIn animated" data-wow-offset="10" data-wow-duration="1.5s">
-		
-		<!-- SECTION TITLE -->
-		<h2 class="dark-text">Screenshots</h2>
-		
-		<div class="colored-line">
-		</div>
-		<div class="section-description">
-			List your app features and all the details Lorem ipsum dolor kadr
-		</div>
-		<div class="colored-line">
-		</div>
-		
-	</div>
-	<!-- /END SECTION HEADER -->
-	
-	<div class="row wow bounceIn animated" data-wow-offset="10" data-wow-duration="1.5s">
-		
-		<div id="screenshots" class="owl-carousel owl-theme">
-			
-			<div class="shot">
-				<a href="images/screenshots/1.jpg" data-lightbox-gallery="screenshots-gallery"><img src="images/screenshots/1.jpg" alt="Screenshot"></a>
-			</div>
-			
-			<div class="shot">
-				<a href="images/screenshots/3.jpg" data-lightbox-gallery="screenshots-gallery"><img src="images/screenshots/3.jpg" alt="Screenshot"></a>
-			</div>
-			
-			<div class="shot">
-				<a href="images/screenshots/2.jpg" data-lightbox-gallery="screenshots-gallery"><img src="images/screenshots/2.jpg" alt="Screenshot"></a>
-			</div>
-			
-			<div class="shot">
-				<a href="images/screenshots/4.jpg" data-lightbox-gallery="screenshots-gallery"><img src="images/screenshots/4.jpg" alt="Screenshot"></a>
-			</div>
-			
-			<div class="shot">
-				<a href="images/screenshots/1.jpg" data-lightbox-gallery="screenshots-gallery"><img src="images/screenshots/1.jpg" alt="Screenshot"></a>
-			</div>
-			
-			<div class="shot">
-				<a href="images/screenshots/3.jpg" data-lightbox-gallery="screenshots-gallery"><img src="images/screenshots/3.jpg" alt="Screenshot"></a>
-			</div>
-			
-			<div class="shot">
-				<a href="images/screenshots/2.jpg" data-lightbox-gallery="screenshots-gallery"><img src="images/screenshots/2.jpg" alt="Screenshot"></a>
-			</div>
-			
-			<div class="shot">
-				<a href="images/screenshots/4.jpg" data-lightbox-gallery="screenshots-gallery"><img src="images/screenshots/4.jpg" alt="Screenshot"></a>
-			</div>
-			
-		</div>
-		<!-- /END SCREENSHOTS -->
-		
-	</div>
-	<!-- /END ROW -->
-	
-</div>
-<!-- /END CONTAINER -->
-
-</section>
-<!-- /END SCREENSHOTS SECTION -->
-
-
-<!-- =========================
-     PRICING TABLE | Added on version 1.7   
-============================== -->
-<section class="packages" id="packages">
-
-<div class="container">
-	
-	<!-- SECTION HEADER -->
-	<div class="section-header wow fadeIn animated" data-wow-offset="10" data-wow-duration="1.5s">
-		
-		<!-- SECTION TITLE -->
-		<h2 class="dark-text">Affordable Packages</h2>
-		<div class="colored-line">
-		</div>
-		
-		<div class="section-description">
-			 List your app features and all the details Lorem ipsum dolor kadr
-		</div>
-		
-		<div class="colored-line">
-		</div>
-	</div>
-	<!-- /END SECTION HEADER -->
-	
-    <div class="row">
-		
-		<!-- SINGLE PACKACGE -->
-		<div class="col-md-4 col-sm-4 single-service wow fadeIn animated" data-wow-offset="10" data-wow-duration="1.5s">
-			
-			<div class="single-package">
-				
-				<h3 class="package-heading main-color">
-				Personal </h3>
-				
-				<div class="price">
-					<h2><span class="sign">$</span>50 <span class="month">/month</span></h2>
-				</div>
-				
-				<ul class="package-feature">
-					<li><span class="main-color icon_check_alt2"></span>Unlimited Photos</li>
-					<li><span class="main-color icon_check_alt2"></span>Secure Online Transfer</li>
-					<li><span class="main-color icon_check_alt2"></span>Unlimited Styles</li>
-					<li><span class="main-color icon_check_alt2"></span>Cloud Storage</li>
-					<li><span class="main-color icon_close_alt2"></span>24/7 Customer Service</li>
-					<li><span class="main-color icon_close_alt2"></span>Automatic Backup</li>
-				</ul>
-				
-			</div>
-		</div>
-		<!-- /END SINGLE PACKACGE -->
-		
-		<!-- SINGLE PACKACGE -->
-		<div class="col-md-4 col-sm-4 single-service wow fadeIn animated" data-wow-offset="10" data-wow-duration="1.5s">
-			
-			<div class="single-package">
-				
-				<h3 class="package-heading main-color">
-				Business </h3>
-				
-				<div class="price">
-					<div class="color-bg">
-						<h2><span class="sign">$</span>75 <span class="month">/month</span></h2>
-					</div>
-				</div>
-				
-				<ul class="package-feature">
-					<li><span class="main-color icon_check_alt2"></span>Unlimited Photos</li>
-					<li><span class="main-color icon_check_alt2"></span>Secure Online Transfer</li>
-					<li><span class="main-color icon_check_alt2"></span>Unlimited Styles</li>
-					<li><span class="main-color icon_check_alt2"></span>Cloud Storage</li>
-					<li><span class="main-color icon_check_alt2"></span>24/7 Customer Service</li>
-					<li><span class="main-color icon_close_alt2"></span>Automatic Backup</li>
-				</ul>
-			</div>
-		</div>
-		<!-- /END SINGLE PACKACGE -->
-		
-		<!-- SINGLE PACKACGE -->
-		<div class="col-md-4 col-sm-4 single-service wow fadeIn animated" data-wow-offset="10" data-wow-duration="1.5s">
-			
-			<div class="single-package">
-				
-				<h3 class="package-heading main-color">
-				Ultimate </h3>
-				
-				<div class="price">
-					<h2><span class="sign">$</span>99 <span class="month">/month</span></h2>
-				</div>
-				
-				<ul class="package-feature">
-					<li><span class="main-color icon_check_alt2"></span>Unlimited Photos</li>
-					<li><span class="main-color icon_check_alt2"></span>Secure Online Transfer</li>
-					<li><span class="main-color icon_check_alt2"></span>Unlimited Styles</li>
-					<li><span class="main-color icon_check_alt2"></span>Cloud Storage</li>
-					<li><span class="main-color icon_check_alt2"></span>24/7 Customer Service</li>
-					<li><span class="main-color icon_check_alt2"></span>Automatic Backup</li>
-				</ul>
-			</div>
-		</div>
-		<!-- /END SINGLE PACKACGE -->
-		
-	</div>
-	<!-- /END ROW -->
-	
-</div>
-<!-- /END CONTAINER -->
-</section>
-<!-- /END PRICING TABLE SECTION -->
-
-
-
-
-<!-- =========================
-     DOWNLOAD NOW 
-============================== -->
-<section class="download" id="download">
-
-<div class="color-overlay">
-
-	<div class="container">
-		<div class="row">
-			<div class="col-md-8 col-md-offset-2">
-				
-				<!-- DOWNLOAD BUTTONS AREA -->
-				<div class="download-container">
-					<h2 class=" wow fadeInLeft animated" data-wow-offset="10" data-wow-duration="1.5s">Download the app on</h2>
-					
-					<!-- BUTTONS -->
-					<div class="buttons wow fadeInRight animated" data-wow-offset="10" data-wow-duration="1.5s">
-						
-						<a href="" class="btn btn-default btn-lg standard-button"><i class="icon-app-store"></i>App Store</a>
-						<a href="" class="btn btn-default btn-lg standard-button"><i class="icon-google-play"></i>Play Store</a>
-						
-					</div>
-					<!-- /END BUTTONS -->
-					
-				</div>
-				<!-- END OF DOWNLOAD BUTTONS AREA -->
-				
-				
-				<!-- SUBSCRIPTION FORM WITH TITLE -->
-				<div class="subscription-form-container">
-					
-					<h2 class="wow fadeInLeft animated" data-wow-offset="10" data-wow-duration="1.5s">Subscribe Now!</h2>
-					
-					<!-- =====================
-					     MAILCHIMP FORM STARTS 
-					     ===================== -->
-					
-					<form class="subscription-form mailchimp form-inline wow fadeInRight animated" data-wow-offset="10" data-wow-duration="1.5s" role="form">
-						
-						<!-- SUBSCRIPTION SUCCESSFUL OR ERROR MESSAGES -->
-						<h4 class="subscription-success"></h4>
-						<h4 class="subscription-error"></h4>
-						
-						<!-- EMAIL INPUT BOX -->
-						<input type="email" name="email" id="subscriber-email" placeholder="Your Email" class="form-control input-box">
-						
-						<!-- SUBSCRIBE BUTTON -->
-						<button type="submit" id="subscribe-button" class="btn btn-default standard-button">Subscribe</button>
-						
+<!-- contact modal-->
+<div class="modal fade" id="modalContact" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+			<h3 class="modal-title">Contact</h3>
+			<form action="scripts/contact.php" role="form"  id="contact_form">
+						<div class="form-group">
+							<input type="text" class="form-control" id="contact_name" placeholder="Full name" name="name">
+						</div>
+						<div class="form-group">
+							<input type="email" class="form-control" id="contact_email" placeholder="Email Address" name="email">
+						</div>
+						<div class="form-group">
+							<textarea class="form-control" rows="3" placeholder="Your message or question" id="contact_message" name="message"></textarea>
+						</div>
+						<button type="submit" id="contact_submit" data-loading-text="&bull;&bull;&bull;"> <i class="icon icon-paper-plane"></i></button>
 					</form>
-					<!-- /END MAILCHIMP FORM STARTS -->
-					
-					<!-- =====================
-					     LOCAL TXT FORM STARTS 
-					     ===================== -->
-					     
-					<!-- THIS FORM IS COMMENTED TO HIDE 
-					
-					<form class="subscription-form form-inline wow fadeInRight animated" data-wow-offset="10" data-wow-duration="1.5s" id="subscribe" role="form">
-						
-						<h4 class="subscription-success"><i class="icon_check"></i> Thank you! We will notify you soon.</h4>
-						<h4 class="subscription-error">Something Wrong!</h4>
-						
-						<input type="email" name="email" id="subscriber-email" placeholder="Your Email" class="form-control input-box">
-						
-						<button type="submit" id="subscribe-button" class="btn btn-default standard-button">Subscribe</button>
-						
-					</form>
-					
-					-->
-					
-					<!-- / LOCAL TXT SAVING FORM END -->
-
-				</div>
-                <!-- END OF SUBSCRIPTION FORM WITH TITLE -->
-				
-			</div> 
-			<!-- END COLUMN -->
-			
-		</div> 
-		<!-- END ROW -->
-		
-	</div>
-	<!-- /END CONTAINER -->
-</div>
-<!-- /END COLOR OVERLAY -->
-
-</section>
-<!-- /END DOWNLOAD SECTION -->
-
-
-<!-- =========================
-     FOOTER 
-============================== -->
-<footer>
-
-<div class="container">
-	
-	<div class="contact-box wow rotateIn animated" data-wow-offset="10" data-wow-duration="1.5s">
-		
-		<!-- CONTACT BUTTON TO EXPAND OR COLLAPSE FORM -->
-		
-		<a class="btn contact-button expand-form expanded"><i class="icon_mail_alt"></i></a>
-		
-		<!-- EXPANDED CONTACT FORM -->
-		<div class="row expanded-contact-form">
-			
-			<div class="col-md-8 col-md-offset-2">
-				
-				<!-- FORM -->
-				<form class="contact-form" id="contact" role="form">
-					
-					<!-- IF MAIL SENT SUCCESSFULLY -->
-					<h4 class="success">
-						<i class="icon_check"></i> Your message has been sent successfully.
-					</h4>
-					
-					<!-- IF MAIL SENDING UNSUCCESSFULL -->
-					<h4 class="error">
-						<i class="icon_error-circle_alt"></i> E-mail must be valid and message must be longer than 1 character.
-					</h4>
-					
-					<div class="col-md-6">
-						<input class="form-control input-box" id="name" type="text" name="name" placeholder="Your Name">
-					</div>
-					
-					<div class="col-md-6">
-						<input class="form-control input-box" id="email" type="email" name="email" placeholder="Your Email">
-					</div>
-					
-					<div class="col-md-12">
-						<input class="form-control input-box" id="subject" type="text" name="subject" placeholder="Subject">
-						<textarea class="form-control textarea-box" id="message" rows="8" placeholder="Message"></textarea>
-					</div>
-					
-					<button class="btn btn-primary standard-button2 ladda-button" type="submit" id="submit" name="submit" data-style="expand-left">Send Message</button>
-					
-				</form>
-				<!-- /END FORM -->
-				
-			</div>
-			
 		</div>
-		<!-- /END EXPANDED CONTACT FORM -->
-		
 	</div>
-	<!-- /END CONTACT BOX -->
-	
-	<!-- LOGO -->
-	<img src="images/logo-black.png" alt="LOGO" class="responsive-img">
-	
-	<!-- SOCIAL ICONS -->
-	<ul class="social-icons">
-		<li><a href=""><i class="social_facebook_square"></i></a></li>
-		<li><a href=""><i class="social_twitter_square"></i></a></li>
-		<li><a href=""><i class="social_pinterest_square"></i></a></li>
-		<li><a href=""><i class="social_googleplus_square"></i></a></li>
-		<li><a href=""><i class="social_instagram_square"></i></a></li>
-		<li><a href=""><i class="social_dribbble_square"></i></a></li>
-		<li><a href=""><i class="social_flickr_square"></i></a></li>
-	</ul>
-	
-	<!-- COPYRIGHT TEXT -->
-	<p class="copyright">
-		©2014 Kane, All Rights Reserved
-	</p>
-
 </div>
-<!-- /END CONTAINER -->
- 
-</footer>
-<!-- /END FOOTER -->
+
+<!-- MODALS END-->
 
 
-<!-- =========================
-     SCRIPTS 
-============================== -->
+<!-- JavaScript --> 
+<script src="scripts/jquery-1.8.2.min.js"></script> 
+<script src="scripts/bootstrap.min.js"></script> 
+<script src="scripts/owl.carousel.min.js"></script> 
+<script src="scripts/jquery.validate.min.js"></script> 
+<script src="scripts/wow.min.js"></script> 
+<script src="scripts/smoothscroll.js"></script> 
+<script src="scripts/jquery.smooth-scroll.min.js"></script> 
+<script src="scripts/jquery.superslides.min.js"></script>
+<script src="scripts/placeholders.jquery.min.js"></script>
+<script src="scripts/jquery.magnific-popup.min.js"></script>
+<script src="scripts/jquery.stellar.min.js"></script>
+<script src="scripts/retina.min.js"></script>
+<script src="scripts/typed.js"></script> 
+<script src="scripts/custom.js"></script> 
 
-<script src="js/bootstrap.min.js"></script>
-<script src="js/smoothscroll.js"></script>
-<script src="js/jquery.scrollTo.min.js"></script>
-<script src="js/jquery.localScroll.min.js"></script>
-<script src="js/owl.carousel.min.js"></script>
-<script src="js/nivo-lightbox.min.js"></script>
-<script src="js/simple-expand.min.js"></script>
-<script src="js/wow.min.js"></script>
-<script src="js/jquery.stellar.min.js"></script>
-<script src="js/retina.min.js"></script>
-<script src="js/jquery.nav.js"></script>
-<script src="js/matchMedia.js"></script>
-<script src="js/jquery.ajaxchimp.min.js"></script>
-<script src="js/jquery.fitvids.js"></script>
-<script src="js/custom.js"></script>
-
+<!--[if lte IE 9]>
+	<script src="scripts/respond.min.js"></script>
+<![endif]-->
 </body>
 </html>
