@@ -92,9 +92,9 @@ $(document).ready(function(){
 //						     INTRO SLOGAN TYPE
 //------------------------------------------------------------------------		
 	$(".type").typed({
-    	strings: ["Elegant", "Fresh", "Juicy", "Beautiful"],
+    	strings: ["Best Price", "Most Effective", "Most Trusted", "Most Secure"],
         typeSpeed: 200,
-		backDelay:6000,
+		backDelay:3000,
 		loop: true,
         loopCount: false,
     });
