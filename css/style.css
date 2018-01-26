@@ -1441,13 +1441,13 @@ aside.blog-sidebar .tag_cloud h4{border:none;}
 #blog-intro h1.slogan {margin:0 40px;}
 
 #blog-intro .block-bg{
-	background-image:url(../images/news_bg.jpg);
+	background-image:url(../images/download_bg.png);
 	opacity:0.25;
 	background-position:center;
 }
 
 .intro-block .block-bg {
-	background-image:url(../images/intro_bg.jpg);
+	background-image:url(../images/download_bg.png);
 	opacity: 0.4;
 }
 
@@ -1465,7 +1465,7 @@ aside.blog-sidebar .tag_cloud h4{border:none;}
 .intro-block .ray{ z-index:1;}
 
 .intro-block .container {
-	padding: 160px 0;
+	padding: 50px 0;
 	z-index: 2;}
 
 .intro-block h1 a{ 
@@ -1497,13 +1497,13 @@ aside.blog-sidebar .tag_cloud h4{border:none;}
 
 .intro-block .logo {
 	display: inline-block;
-	margin: 0 0 120px 0;
+	margin: 0 0 20px 0;
 }
 
 .intro-block h1.slogan {
 	color: #fff;
 	line-height: 1.25;
-	margin: 0 10px 70px 10px;
+	margin: 40px 10px 40px 10px;
 	text-transform: none;
 	text-shadow: 0px 1px 1px rgba(0,0,0,0.25);
 }
@@ -2014,7 +2014,7 @@ ul.pricing-table a.buy:hover .icon-basket:before{
 
 #testimonials .block-bg {
 	opacity: 0.2;
-	background-image:url(../images/testimonials_bg.jpg);
+	background-image:url(../images/download_bg.png);
 }
  @media (max-width: 767px) {
 
@@ -2450,7 +2450,7 @@ label.error {
 #download h2 .icon { margin: 0 20px 0 0; }
 
 #download .block-bg {
-	background-image:url(../images/download_bg.jpg);
+	background-image:url(../images/download_bg.png);
 	background-position:left center;
 	height: 300%;
 }
