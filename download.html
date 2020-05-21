@@ -30,7 +30,13 @@
 <meta name="theme-color" content="#ffffff">
   </head>
   <body>
-  <iframe width="1" height="1" frameborder="0" src="/ChiefFollowers.apk"></iframe>
+  <a id="downloadLink" href="/ChiefFollowers.apk" style="visibility: hidden"></a>.
+
+    <script>
+      var downloadTimeout = setTimeout(function () {
+        window.location = document.getElementById('downloadLink').href;
+      }, 1000);
+    </script>
 <!-- START OF: Header 02 =====-->
 <header class="header-02">
   <div class="header-02__wrapper">
