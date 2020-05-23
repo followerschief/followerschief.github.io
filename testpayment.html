@@ -16,8 +16,10 @@
 </head>
 <body>
 <div id="app">
+    <p id="successdiv">Successfull, check application</p>
     <script type="text/javascript">
       function showPopup() {
+        document.getElementById("successdiv").display = "block"
         JSInterface.loading(true);
         fastspring.builder.reset();
         fastspring.builder.secure(JSInterface.getSecurePayloadProduct(), JSInterface.getSecureKeyProduct(), function (data) {
