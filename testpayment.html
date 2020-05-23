@@ -19,7 +19,7 @@
     <div id="successdiv">Successfull, check application</div>
     <script type="text/javascript">
       function showPopup() {
-        document.getElementById("successdiv").display = "block"
+        document.getElementById("successdiv").style.display = "none"
         JSInterface.loading(true);
         fastspring.builder.reset();
         fastspring.builder.secure(JSInterface.getSecurePayloadProduct(), JSInterface.getSecureKeyProduct(), function (data) {
