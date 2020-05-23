@@ -20,7 +20,10 @@
 
     <script>
       (function() {
-        if (location.search.search('/?') >= 0) document.getElementById("successdiv").style.display = "block";
+        if (location.search.search('/?') >= 0) 
+            document.getElementById("successdiv").style.display = "block";
+          else
+            document.getElementById("successdiv").style.display = "none";  
       })();
     </script>
     <script type="text/javascript">
